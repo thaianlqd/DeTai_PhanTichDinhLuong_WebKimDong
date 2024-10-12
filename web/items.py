@@ -8,8 +8,6 @@ import scrapy
 
 class WebBooksitem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    
     tieuDe = scrapy.Field()
     #danhGia = scrapy.Field()
     daBan = scrapy.Field()

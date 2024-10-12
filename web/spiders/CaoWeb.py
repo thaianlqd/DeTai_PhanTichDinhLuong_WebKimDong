@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 class WebNXBKimDong(scrapy.Spider):
     name = 'WebNXBNhiDong_Crawler'
     allowed_domains = ['nxbkimdong.com.vn']
-    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 2)]
+    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 3)]
 
     def parse(self, response):
         #note: Lấy URL của sách từ trang hiện tại
@@ -17,7 +17,7 @@ class WebNXBKimDong(scrapy.Spider):
         book_urls = response.css('.product-item a::attr(href)').getall()
         book_urls = [url for url in book_urls if url]
         full_urls = [base_url + url for url in book_urls]
-        #note: tìm đưỡng dẫn của các url trong trang hiện tại
+        #note: tìm đường dẫn của các url trong trang hiện tại
         for i_url in full_urls:
             #note: tạo url đầy đủ từ các link con của cuốn sách, dùng urljoin để nối url sách + url gốc
             yield scrapy.Request(url= i_url, callback=self.parse_book)
@@ -213,8 +213,6 @@ class WebNXBKimDong(scrapy.Spider):
         #item['boSach'] = response.xpath('//li[contains(text(), "Bộ sách")]/a/text()').get(default="không có").strip() or response.xpath("//span[@class='field field-name-field-product-tax-bosach field-type-taxonomy-term-reference field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/a/text()").get(default="không có")
         item['loaiSach'] = response.xpath('//div[@class="breadcrumb-small"]/a[2]/text()').get(default="không có").strip()
         item['moTa'] = ' '.join(response.xpath('//*[@id="protab0"]//text()').getall()).strip()
-
-
 
         yield item
 

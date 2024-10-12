@@ -1,0 +1,52 @@
+services:
+  spark_container:
+    image: bitnami/spark:latest
+    container_name: spark_container
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_URL=spark://spark_container:7077
+    ports:
+      - "4040:4040"
+    volumes:
+      - /home/osboxes/DeTai_PhanTichDinhLuong_WebKimDong-main_version2_Linux/web/Connection_Postgresql:/usr/src/app/web/Connection_Postgresql
+    command: >
+       bash -c "
+        pip install psycopg2-binary pymongo &&
+        spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0,org.postgresql:postgresql:42.5.0 /usr/src/app/web/Connection_Postgresql/pyspark_Docker.py"
+    # command: >
+    #   /bin/bash -c "pip install psycopg2-binary pymongo py4j  && \
+    #   spark-submit --master local[*] --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.0,org.postgresql:postgresql:42.5.0 /usr/src/app/web/Connection_Postgresql/pyspark_Docker.py"
+    depends_on:
+      - mongodb_container
+      - postgres_container
+    networks:
+      - my_network
+
+  mongodb_container:
+    image: mongo:4.4
+    container_name: mymongodb_container
+    ports:
+      - "27017:27017"
+    networks:
+      - my_network
+
+  postgres_container:
+    image: postgres:latest
+    container_name: postgres_container
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - my_network
+
+networks:
+  my_network:
+
+
+
+
+
+
