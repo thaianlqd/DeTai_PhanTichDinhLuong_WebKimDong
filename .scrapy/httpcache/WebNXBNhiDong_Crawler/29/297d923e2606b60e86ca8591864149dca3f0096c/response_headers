@@ -1,15 +1,15 @@
 Server: openresty
-Date: Mon, 07 Oct 2024 02:08:06 GMT
+Date: Sat, 12 Oct 2024 07:14:22 GMT
 Content-Type: text/html; charset=utf-8
 Vary: Accept-Encoding
 Cache-Control: private
-Etag: W/"b0f3e2a754a346be90540a2b21bf081b"
+Etag: W/"15dad98e3a3743c4889897c56b639aee"
 Strict-Transport-Security: max-age=604800
 X-Shopid: 200000343865
 X-Cache: miss
-X-Cache-Ver: 252402
+X-Cache-Ver: 263067
 X-Pindex: 252
-X-Requestid: e6c7846a36d267fb1ebcd93de8ea980d
+X-Requestid: 2b62fa44ccc7375b8b7510c4e679c019
 P3P: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
 X-Content-Type-Options: nosniff
 Content-Security-Policy: block-all-mixed-content; frame-ancestors 'self'; upgrade-insecure-requests

@@ -1,14 +1,14 @@
 Server: openresty
-Date: Mon, 07 Oct 2024 02:07:58 GMT
+Date: Sat, 12 Oct 2024 07:14:16 GMT
 Content-Type: text/plain; charset=utf-8
 Vary: Accept-Encoding
 Cache-Control: private
-Set-Cookie: _landing_page=%252Frobots.txt; expires=Wed, 06 Nov 2024 02:07:58 GMT; path=/
-Set-Cookie: _orig_referer=; expires=Wed, 06 Nov 2024 02:07:58 GMT; path=/
-Set-Cookie: shop_ref=; expires=Wed, 06 Nov 2024 02:07:58 GMT; path=/
+Set-Cookie: _landing_page=%252Frobots.txt; expires=Mon, 11 Nov 2024 07:14:16 GMT; path=/
+Set-Cookie: _orig_referer=; expires=Mon, 11 Nov 2024 07:14:16 GMT; path=/
+Set-Cookie: shop_ref=; expires=Mon, 11 Nov 2024 07:14:16 GMT; path=/
 Strict-Transport-Security: max-age=604800
 X-Shopid: 200000343865
-X-Requestid: d304ac6bb55000d4d2f14fdbaa2183a5
+X-Requestid: 8c9aaa312cec4edd16a45be80c19bff0
 P3P: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
 X-Content-Type-Options: nosniff
 Content-Security-Policy: block-all-mixed-content; frame-ancestors 'self'; upgrade-insecure-requests
