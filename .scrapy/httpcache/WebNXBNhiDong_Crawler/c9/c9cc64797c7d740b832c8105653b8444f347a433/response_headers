@@ -1,0 +1,18 @@
+Server: openresty
+Date: Wed, 20 Nov 2024 16:05:37 GMT
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Cache-Control: private
+Etag: W/"f10a0a93670a470caf28a1d8d16287c6"
+Link: <https://product.hstatic.net>; rel="preconnect"; crossorigin, <https://file.hstatic.net>; rel="preconnect"; crossorigin, <https://hstatic.net>; rel="preconnect"; crossorigin, <https://theme.hstatic.net>; rel="preconnect"; crossorigin
+Strict-Transport-Security: max-age=604800
+X-Shopid: 200000343865
+X-Cache: miss
+X-Cache-Ver: 321817
+X-Pindex: 245
+X-Requestid: e9029998784372acf672ce6b4283bc0b
+P3P: CP="NOI DSP COR NID ADMa OPTa OUR NOR"
+X-Content-Type-Options: nosniff
+Content-Security-Policy: block-all-mixed-content; frame-ancestors 'self'; upgrade-insecure-requests
+X-Xss-Protection: 1; mode=block
+Content-Encoding: gzip

@@ -1,0 +1,154 @@
+[2024-11-15T06:50:59.171+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:50:59.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:50:59.198+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:50:59.196+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:51:01.229+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:51:03.101+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.095+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.129+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.129+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.136+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.136+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.146+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.146+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.154+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.154+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.162+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.161+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.170+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.169+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.171+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.171+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:51:03.256+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.255+0000] {dag.py:3262} INFO - Creating ORM DAG for kafka_to_postgres_pipeline
+[2024-11-15T06:51:03.317+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:03.317+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:51:04.129+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 5.023 seconds
+[2024-11-15T06:51:35.037+0000] {processor.py:186} INFO - Started process (PID=251) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:51:35.076+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:51:35.133+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:35.130+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:51:35.543+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:51:35.573+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:35.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:51:35.595+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:51:35.595+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:51:35.616+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.699 seconds
+[2024-11-15T06:52:06.298+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:06.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:52:06.358+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:06.355+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:07.008+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:07.315+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:07.315+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:52:07.877+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:07.876+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:52:07.971+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.852 seconds
+[2024-11-15T06:52:38.706+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:38.743+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:52:38.830+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:38.827+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:39.801+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:52:40.204+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:40.204+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:52:40.669+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:52:40.668+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:52:50.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 11.838 seconds
+[2024-11-15T06:53:21.154+0000] {processor.py:186} INFO - Started process (PID=283) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:21.160+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:53:21.164+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:21.164+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:21.525+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:21.620+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:21.619+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:53:22.759+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:22.756+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:53:22.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.731 seconds
+[2024-11-15T06:53:52.981+0000] {processor.py:186} INFO - Started process (PID=293) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:52.983+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:53:52.986+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:52.986+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:53.114+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:53:53.944+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:53.944+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:53:54.038+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:53:54.037+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:53:54.080+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.106 seconds
+[2024-11-15T06:54:24.627+0000] {processor.py:186} INFO - Started process (PID=303) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:24.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:54:24.632+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:24.632+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:25.078+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:25.134+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:25.134+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:54:25.269+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:25.268+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:54:25.312+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.692 seconds
+[2024-11-15T06:54:55.722+0000] {processor.py:186} INFO - Started process (PID=336) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:55.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:54:55.729+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:55.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:55.951+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:54:55.982+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:55.982+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:54:58.320+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:54:58.320+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-15T06:54:58.352+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 2.640 seconds
+[2024-11-15T06:55:29.153+0000] {processor.py:186} INFO - Started process (PID=358) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:55:29.156+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T06:55:29.168+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:55:29.167+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:55:29.821+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T06:55:30.513+0000] {logging_mixin.py:190} INFO - [2024-11-15T06:55:30.512+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-15T06:55:37.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 8.479 seconds
+[2024-11-15T13:26:13.332+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:13.333+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:26:13.334+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:26:13.334+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:13.346+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:26:13.343+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:26:13.347+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:13.365+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.037 seconds
+[2024-11-15T13:26:43.592+0000] {processor.py:186} INFO - Started process (PID=185) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:43.593+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:26:43.595+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:26:43.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:43.613+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:26:43.609+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:26:43.614+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:26:43.630+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.044 seconds
+[2024-11-15T13:27:13.857+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:13.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:27:13.860+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:27:13.859+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:13.872+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:27:13.868+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:27:13.873+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:13.920+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.067 seconds
+[2024-11-15T13:27:44.067+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:44.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:27:44.069+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:27:44.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:44.079+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:27:44.077+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:27:44.080+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:27:44.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.038 seconds
+[2024-11-15T13:28:14.333+0000] {processor.py:186} INFO - Started process (PID=215) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:14.334+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:28:14.335+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:28:14.335+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:14.346+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:28:14.343+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:28:14.347+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:14.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.035 seconds
+[2024-11-15T13:28:44.610+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:44.611+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-15T13:28:44.612+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:28:44.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:44.625+0000] {logging_mixin.py:190} INFO - [2024-11-15T13:28:44.623+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/test_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/test_postgres.py", line 5, in <module>
+    from pyspark.sql import SparkSession
+ModuleNotFoundError: No module named 'pyspark'
+[2024-11-15T13:28:44.626+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-15T13:28:44.647+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.042 seconds

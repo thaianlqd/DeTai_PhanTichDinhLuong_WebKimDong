@@ -1,0 +1,59 @@
+[2024-11-20T14:44:24.765+0000] {processor.py:186} INFO - Started process (PID=212) to work on /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:24.765+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/all_in_flow.py for tasks to queue
+[2024-11-20T14:44:24.767+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:24.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:24.855+0000] {processor.py:925} INFO - DAG(s) 'complete_dag_for_crawling_mongo_kafka_spark_Postgres' retrieved from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:25.076+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.076+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.084+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.084+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.089+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.089+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.095+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.095+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.100+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.099+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.105+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.104+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.109+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.109+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.110+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.110+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:44:25.120+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.119+0000] {dag.py:3262} INFO - Creating ORM DAG for complete_dag_for_crawling_mongo_kafka_spark_Postgres
+[2024-11-20T14:44:25.120+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.120+0000] {dag.py:4180} INFO - Setting next_dagrun for complete_dag_for_crawling_mongo_kafka_spark_Postgres to None, run_after=None
+[2024-11-20T14:44:25.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/all_in_flow.py took 0.373 seconds
+[2024-11-20T14:44:55.845+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:55.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/all_in_flow.py for tasks to queue
+[2024-11-20T14:44:55.848+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:55.848+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:55.914+0000] {processor.py:925} INFO - DAG(s) 'complete_dag_for_crawling_mongo_kafka_spark_Postgres' retrieved from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:44:56.055+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:56.055+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:44:56.064+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:56.064+0000] {dag.py:4180} INFO - Setting next_dagrun for complete_dag_for_crawling_mongo_kafka_spark_Postgres to None, run_after=None
+[2024-11-20T14:44:56.084+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/all_in_flow.py took 0.243 seconds
+[2024-11-20T14:45:26.393+0000] {processor.py:186} INFO - Started process (PID=252) to work on /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:45:26.394+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/all_in_flow.py for tasks to queue
+[2024-11-20T14:45:26.395+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.395+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:45:26.594+0000] {processor.py:925} INFO - DAG(s) 'complete_dag_for_crawling_mongo_kafka_spark_Postgres' retrieved from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:45:26.615+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.614+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:45:26.640+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.639+0000] {dag.py:4180} INFO - Setting next_dagrun for complete_dag_for_crawling_mongo_kafka_spark_Postgres to None, run_after=None
+[2024-11-20T14:45:26.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/all_in_flow.py took 0.271 seconds
+[2024-11-20T14:47:08.621+0000] {processor.py:186} INFO - Started process (PID=212) to work on /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:08.621+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/all_in_flow.py for tasks to queue
+[2024-11-20T14:47:08.623+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:08.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:08.698+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:08.694+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/all_in_flow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/all_in_flow.py", line 123, in <module>
+    start_date=datetime(2024, 20, 11),
+               ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: month must be in 1..12
+[2024-11-20T14:47:08.700+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:08.717+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/all_in_flow.py took 0.103 seconds
+[2024-11-20T14:47:39.401+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:39.402+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/all_in_flow.py for tasks to queue
+[2024-11-20T14:47:39.403+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:39.403+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:39.467+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:39.464+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/all_in_flow.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/all_in_flow.py", line 123, in <module>
+    start_date=datetime(2024, 20, 11),
+               ^^^^^^^^^^^^^^^^^^^^^^
+ValueError: month must be in 1..12
+[2024-11-20T14:47:39.469+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/all_in_flow.py
+[2024-11-20T14:47:39.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/all_in_flow.py took 0.088 seconds

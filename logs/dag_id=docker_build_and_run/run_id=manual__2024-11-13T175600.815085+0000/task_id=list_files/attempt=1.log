@@ -1,0 +1,25 @@
+[2024-11-13T17:56:03.746+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-13T17:56:03.829+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_build_and_run.list_files manual__2024-11-13T17:56:00.815085+00:00 [queued]>
+[2024-11-13T17:56:03.869+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_build_and_run.list_files manual__2024-11-13T17:56:00.815085+00:00 [queued]>
+[2024-11-13T17:56:03.870+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-13T17:56:03.914+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): list_files> on 2024-11-13 17:56:00.815085+00:00
+[2024-11-13T17:56:03.946+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=194) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-13T17:56:03.940+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'docker_build_and_run', 'list_files', 'manual__2024-11-13T17:56:00.815085+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_airflow_ahihi.py', '--cfg-path', '/tmp/tmp9hbu8kgv']
+[2024-11-13T17:56:03.948+0000] {standard_task_runner.py:72} INFO - Started process 195 to run task
+[2024-11-13T17:56:03.948+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask list_files
+[2024-11-13T17:56:03.979+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T17:56:04.044+0000] {task_command.py:467} INFO - Running <TaskInstance: docker_build_and_run.list_files manual__2024-11-13T17:56:00.815085+00:00 [running]> on host e240c27bdae7
+[2024-11-13T17:56:04.246+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='docker_build_and_run' AIRFLOW_CTX_TASK_ID='list_files' AIRFLOW_CTX_EXECUTION_DATE='2024-11-13T17:56:00.815085+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-13T17:56:00.815085+00:00'
+[2024-11-13T17:56:04.247+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-13T17:56:04.367+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-13T17:56:04.373+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/dags && ls -l']
+[2024-11-13T17:56:04.392+0000] {subprocess.py:99} INFO - Output:
+[2024-11-13T17:56:04.449+0000] {subprocess.py:106} INFO - total 4
+[2024-11-13T17:56:04.450+0000] {subprocess.py:106} INFO - drwxrwxr-x 1 airflow root  512 Nov 13 17:54 __pycache__
+[2024-11-13T17:56:04.451+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root    root 1529 Nov 13 17:53 test_airflow_ahihi.py
+[2024-11-13T17:56:04.452+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2024-11-13T17:56:04.489+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-13T17:56:04.492+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=docker_build_and_run, task_id=list_files, run_id=manual__2024-11-13T17:56:00.815085+00:00, execution_date=20241113T175600, start_date=20241113T175603, end_date=20241113T175604
+[2024-11-13T17:56:04.520+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-13T17:56:04.574+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T17:56:04.577+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

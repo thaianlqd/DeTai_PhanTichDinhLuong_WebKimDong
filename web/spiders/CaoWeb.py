@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 class WebNXBKimDong(scrapy.Spider):
     name = 'WebNXBNhiDong_Crawler'
     allowed_domains = ['nxbkimdong.com.vn']
-    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 2)]
+    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 52)]
 
     def parse(self, response):
         #note: Lấy URL của sách từ trang hiện tại
@@ -17,7 +17,7 @@ class WebNXBKimDong(scrapy.Spider):
         book_urls = response.css('.product-item a::attr(href)').getall()
         book_urls = [url for url in book_urls if url]
         full_urls = [base_url + url for url in book_urls]
-        #note: tìm đưỡng dẫn của các url trong trang hiện tại
+        #note: tìm đường dẫn của các url trong trang hiện tại
         for i_url in full_urls:
             #note: tạo url đầy đủ từ các link con của cuốn sách, dùng urljoin để nối url sách + url gốc
             yield scrapy.Request(url= i_url, callback=self.parse_book)
@@ -51,16 +51,15 @@ class WebNXBKimDong(scrapy.Spider):
             or 
             "không có"
         )
-
         
         item['tacGia'] = (
-            # Sử dụng XPath từ Scrapy
-            (response.xpath('//li[contains(text(), "Tác giả")]//a/text()').get(default="không có").strip() 
-            if response.xpath('//li[contains(text(), "Tác giả")]//a/text()').get() 
-            else None) or 
+            # Sử dụng XPath từ Scrapy để lấy danh sách các tác giả
+            ', '.join(response.xpath('//li[contains(text(), "Tác giả")]//a/text()').getall()).strip() 
+            if response.xpath('//li[contains(text(), "Tác giả")]//a/text()').getall() 
+            else 
             # Sử dụng BeautifulSoup
-            (soup.find(class_='tacgia-class').get_text(strip=True) 
-            if soup.find(class_='tacgia-class') 
+            (', '.join([tacgia.get_text(strip=True) for tacgia in soup.find_all(class_='tacgia-class')]) 
+            if soup.find_all(class_='tacgia-class') 
             else soup.find(class_='field-name-field-product-tacgia').find(class_='field-item even').get_text(strip=True) 
             if soup.find(class_='field-name-field-product-tacgia') 
             else None)
@@ -68,51 +67,23 @@ class WebNXBKimDong(scrapy.Spider):
             "không có"
         )
 
-        
+ 
         item['doiTuong'] = (
             # Sử dụng XPath từ Scrapy
-            (response.xpath('//li[contains(text(), "Đối tượng")]//a/text()').get(default="không có").strip() 
+            (response.xpath('//li[contains(text(), "Đối tượng")]//a/text()').get(default="không có").strip().split('(')[0].strip()
             if response.xpath('//li[contains(text(), "Đối tượng")]//a/text()').get() 
-            else None) or 
+            else None) 
+            or 
             # Sử dụng BeautifulSoup
-            (soup.find(class_='doituong-class').get_text(strip=True) 
+            (soup.find(class_='doituong-class').get_text(strip=True).split('(')[0].strip() 
             if soup.find(class_='doituong-class') 
-            else soup.find(class_='field-name-field-product-dotuoi').find(class_='field-item even').get_text(strip=True) 
+            else soup.find(class_='field-name-field-product-dotuoi').find(class_='field-item even').get_text(strip=True).split('(')[0].strip() 
             if soup.find(class_='field-name-field-product-dotuoi') 
             else None)
             or 
             "không có"
         )
-
-        # item['khuonKho'] = (
-        #     # Sử dụng XPath từ Scrapy
-        #     (response.xpath('//li[contains(text(), "Khuôn Khổ")]/text()').get(default="không có").strip().replace("Khuôn Khổ:", "").strip() 
-        #     if response.xpath('//li[contains(text(), "Khuôn Khổ")]/text()').get() 
-        #     else None) or 
-        #     # Sử dụng BeautifulSoup
-        #     (soup.find(class_='khuonkho-class').get_text(strip=True) 
-        #     if soup.find(class_='khuonkho-class') 
-        #     else soup.find(class_='field-name-field-product-khuonkho').find(class_='field-item even').get_text(strip=True) 
-        #     if soup.find(class_='field-name-field-product-khuonkho') 
-        #     else None)
-        #     or 
-        #     "không có"
-        # )
         
-        # item['khuonKho'] = (
-        #     # Sử dụng XPath từ Scrapy
-        #     (response.xpath('//li[contains(text(), "Khuôn Khổ")]/text()').get(default="không có").strip().replace("Khuôn Khổ:", "").replace("cm", "").strip() 
-        #     if response.xpath('//li[contains(text(), "Khuôn Khổ")]/text()').get() 
-        #     else None) or 
-        #     # Sử dụng BeautifulSoup
-        #     (soup.find(class_='khuonkho-class').get_text(strip=True).replace("cm", "").strip() 
-        #     if soup.find(class_='khuonkho-class') 
-        #     else soup.find(class_='field-name-field-product-khuonkho').find(class_='field-item even').get_text(strip=True).replace("cm", "").strip() 
-        #     if soup.find(class_='field-name-field-product-khuonkho') 
-        #     else None)
-        #     or 
-        #     "không có"
-        # )
         
         # Xử lý phần khuôn khổ
         khuon_kho_data = (
@@ -134,26 +105,42 @@ class WebNXBKimDong(scrapy.Spider):
             chieu_rong, chieu_dai = khuon_kho_data, None
 
         # Loại bỏ khoảng trắng thừa
-        chieu_dai = chieu_dai.strip() if chieu_dai else None
         chieu_rong = chieu_rong.strip() if chieu_rong else None
+        chieu_dai = chieu_dai.strip() if chieu_dai else None
 
-        item['chieuDai'] = chieu_dai
-        item['chieuRong'] = chieu_rong
-
+        # Gán giá trị "không có" nếu chiều dài hoặc chiều rộng không có
+        item['chieuRong'] = chieu_rong if chieu_rong and chieu_rong != "" else "không có"
+        item['chieuDai'] = chieu_dai if chieu_dai and chieu_dai != "" else "không có"
+        
+        
         item['soTrang'] = (
             # Sử dụng XPath từ Scrapy
-            (response.xpath('//li[contains(text(), "Số trang")]/text()').get(default="không có").strip().split(':')[-1] 
+            (response.xpath('//li[contains(text(), "Số trang")]/text()').get(default="không có")
+                .strip()
+                .replace('~', '')  # Xóa dấu ngã (~)
+                .replace('trang/cuốn', '')
+                .replace('trang', '')  # Xóa chữ 'trang'
+                .split(':')[-1].strip() 
             if response.xpath('//li[contains(text(), "Số trang")]/text()').get() 
             else None) or 
             # Sử dụng BeautifulSoup
-            (soup.find('li', text='Số trang').get_text(strip=True).split(':')[-1] 
+            (soup.find('li', text='Số trang').get_text(strip=True)
+                .replace('~', '')  # Xóa dấu ngã (~)
+                .replace('trang/cuốn', '')
+                .replace('trang', '')  # Xóa chữ 'trang'
+                .split(':')[-1].strip() 
             if soup.find('li', text='Số trang') 
-            else soup.find(class_='field-name-field-product-sotrang').find(class_='field-item even').get_text(strip=True) 
+            else soup.find(class_='field-name-field-product-sotrang').find(class_='field-item even').get_text(strip=True)
+                .replace('~', '')  # Xóa dấu ngã (~)
+                .replace('trang/cuốn', '')
+                .replace('trang', '')  # Xóa chữ 'trang'
+                .strip() 
             if soup.find(class_='field-name-field-product-sotrang') 
             else None)
             or 
             "không có"
         )
+       
 
         item['dinhDang'] = (
             # Sử dụng XPath từ Scrapy
@@ -200,21 +187,8 @@ class WebNXBKimDong(scrapy.Spider):
             "không có"
         )
 
-        #item['ISBN'] = response.xpath('//li[contains(., "ISBN")]//strong/text()').get(default="không có").strip() 
-        # or response.xpath("//span[@class='field field-name-field-product--isbn field-type-text field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/text()").get() 
-        # or response.xpath("//div[@class='field field-name-field-product--isbn field-type-text field-label-inline clearfix']//div[@class='field-items']//div[@class='field-item even']/text()").get()
-        #item['tacGia'] = response.xpath('//li[contains(text(), "Tác giả")]//a/text()').get(default="không có").strip() or response.xpath("//span[@class='field field-name-field-product-tacgia field-type-entityreference field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/a/text()").get(default="không có")
-        #item['doiTuong'] = response.xpath('//li[contains(text(), "Đối tượng")]//a/text()').get(default="không có").strip() or response.xpath("//span[@class='field field-name-field-product-dotuoi field-type-taxonomy-term-reference field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/a/text()").get(default="không có")      
-        #item['khuonKho'] = response.xpath('//li[contains(text(), "Khuôn Khổ")]/text()').get(default="không có").strip() or response.xpath("//span[@class='field field-name-field-product-khuonkho field-type-text field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/text()").get(default="không có")
-        
-        #item['soTrang'] = response.xpath('//li[contains(text(), "Số trang")]/text()').get(default="không có").split(':')[-1].strip() or response.xpath("//span[@class='field field-name-field-product-sotrang field-type-number-decimal field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/text()").get(default="không có")
-        #item['dinhDang'] = response.xpath('//li[contains(text(), "Định dạng")]/text()').get(default="không có").split(':')[-1].strip() or response.xpath("//span[@class='field field-name-field-product-loaibia field-type-text field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/text()").get(default="không có")
-        #item['trongLuong'] = response.xpath('//li[contains(text(), "Trọng lượng")]/text()').get(default="không có").split(':')[-1].strip().split()[0] or response.xpath("//span[@class='field field-name-field-product-trongluong field-type-number-decimal field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/text()").get(default="không có")
-        #item['boSach'] = response.xpath('//li[contains(text(), "Bộ sách")]/a/text()').get(default="không có").strip() or response.xpath("//span[@class='field field-name-field-product-tax-bosach field-type-taxonomy-term-reference field-label-inline clearfix']//span[@class='field-items']//span[@class='field-item even']/a/text()").get(default="không có")
         item['loaiSach'] = response.xpath('//div[@class="breadcrumb-small"]/a[2]/text()').get(default="không có").strip()
         item['moTa'] = ' '.join(response.xpath('//*[@id="protab0"]//text()').getall()).strip()
-
-
 
         yield item
 

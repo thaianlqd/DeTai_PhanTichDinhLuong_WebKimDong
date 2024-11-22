@@ -14,13 +14,43 @@ import csv
 
 class MongoDBKimDongPipeline:
     def __init__(self):
-        # Kết nối đến MongoDB
-        econnect = str(os.environ['Mongo_HOST'])
-        self.client = pymongo.MongoClient('mongodb://'+econnect+':27017')
+        #note 1: Kết nối đến MongoDB tren docker
+        # econnect = str(os.environ['Mongo_HOST']) 
+        # self.client = pymongo.MongoClient('mongodb://'+econnect+':27017')
         
+        # #note2: ket noi voi mongo tren windows
         # self.client = pymongo.MongoClient('mongodb://localhost:27017')
-        self.db = self.client['books_data_KimDong_126']  # Tạo Database  
-        self.collection = self.db['books_KimDong']  # Định nghĩa collection ở đây 
+        # self.db = self.client['books_data_KimDong_22']  # Tạo Database  
+        # self.collection = self.db['books_KimDong']  # Định nghĩa collection ở đây 
+        
+        #note3: kết nối với MongoDB trên docker - phiên bản chạy nhanh hơn 
+        # mongo_host = os.getenv('Mongo_HOST', 'localhost')  # Sử dụng 'localhost' nếu không có biến môi trường
+        # try:
+        #     # Kết nối đến MongoDB
+        #     self.client = pymongo.MongoClient(f'mongodb://{mongo_host}:27017', serverSelectionTimeoutMS=5000)
+        #     self.db = self.client['books_data_KimDong_12']  # Tạo Database  
+        #     self.collection = self.db['books_KimDong']  # Định nghĩa collection ở đây 
+            
+        #     # Kiểm tra kết nối thành công
+        #     self.client.admin.command('ping')
+        # except pymongo.errors.ServerSelectionTimeoutError:
+        #     print(f"Không thể kết nối đến MongoDB tại host: {mongo_host}")
+        #     raise
+
+        #note4: test bản air flow 
+        try:    
+        # Kết nối đến MongoDB với tên container MongoDB
+            self.client = pymongo.MongoClient('mongodb://mymongodb_container:27017', serverSelectionTimeoutMS=5000)
+            self.db = self.client['books_data_KimDong_12']  # Tạo Database  
+            self.collection = self.db['books_KimDong']  # Định nghĩa collection ở đây 
+        
+        # Kiểm tra kết nối thành công
+            self.client.admin.command('ping')
+        except pymongo.errors.ServerSelectionTimeoutError:
+            print("hihi")
+            raise
+
+        #Không thể kết nối đến MongoDB tại host: mymongodb_container
 
     def process_item(self, item, spider):
         try:
@@ -29,6 +59,9 @@ class MongoDBKimDongPipeline:
         except Exception as e:
             raise DropItem(f"Error inserting item into MongoDB: {e}")
         return item
+
+    
+
 
     def close_spider(self, spider):
         self.client.close()

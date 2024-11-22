@@ -1,0 +1,171 @@
+[2024-11-18T06:36:37.657+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-18T06:36:37.674+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: run_entrypoint_sh.run_entrypoint_sh manual__2024-11-18T06:36:37.187428+00:00 [queued]>
+[2024-11-18T06:36:37.682+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: run_entrypoint_sh.run_entrypoint_sh manual__2024-11-18T06:36:37.187428+00:00 [queued]>
+[2024-11-18T06:36:37.683+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-18T06:36:37.694+0000] {taskinstance.py:2889} INFO - Executing <Task(DockerOperator): run_entrypoint_sh> on 2024-11-18 06:36:37.187428+00:00
+[2024-11-18T06:36:37.701+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=332) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-18T06:36:37.700+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'run_entrypoint_sh', 'run_entrypoint_sh', 'manual__2024-11-18T06:36:37.187428+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_CaoDL.py', '--cfg-path', '/tmp/tmptjjy_ttm']
+[2024-11-18T06:36:37.703+0000] {standard_task_runner.py:72} INFO - Started process 339 to run task
+[2024-11-18T06:36:37.703+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask run_entrypoint_sh
+[2024-11-18T06:36:37.720+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-18T06:36:37.757+0000] {task_command.py:467} INFO - Running <TaskInstance: run_entrypoint_sh.run_entrypoint_sh manual__2024-11-18T06:36:37.187428+00:00 [running]> on host 50e30f50fed2
+[2024-11-18T06:36:37.864+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='run_entrypoint_sh' AIRFLOW_CTX_TASK_ID='run_entrypoint_sh' AIRFLOW_CTX_EXECUTION_DATE='2024-11-18T06:36:37.187428+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-18T06:36:37.187428+00:00'
+[2024-11-18T06:36:37.865+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-18T06:36:37.917+0000] {docker.py:367} INFO - Starting docker container from image detai_phantichdinhluong_webkimdong-main_version2_pyspark_windows-app_crawldata_kimdong
+[2024-11-18T06:36:37.925+0000] {docker.py:375} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2024-11-18T06:36:38.221+0000] {docker.py:438} INFO - Đang chờ 20 giây trước khi chạy Scrapy...
+[2024-11-18T06:36:58.233+0000] {docker.py:438} INFO - Bắt đầu cào dữ liệu với Scrapy...
+[2024-11-18T06:36:58.537+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: web)
+[2024-11-18T06:36:58.538+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.12.9, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.11.10 (main, Nov 12 2024, 06:03:56) [GCC 12.2.0], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36
+[2024-11-18T06:36:58.540+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.addons] INFO: Enabled addons:
+[2024-11-18T06:36:58.540+0000] {docker.py:438} INFO - []
+[2024-11-18T06:36:58.540+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+[2024-11-18T06:36:58.547+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.extensions.telnet] INFO: Telnet Password: dfdebf4e9393e21a
+[2024-11-18T06:36:58.585+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.middleware] INFO: Enabled extensions:
+[2024-11-18T06:36:58.586+0000] {docker.py:438} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2024-11-18T06:36:58.586+0000] {docker.py:438} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2024-11-18T06:36:58.586+0000] {docker.py:438} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2024-11-18T06:36:58.587+0000] {docker.py:438} INFO -  'scrapy.extensions.logstats.LogStats',
+[2024-11-18T06:36:58.587+0000] {docker.py:438} INFO -  'scrapy.extensions.throttle.AutoThrottle']
+[2024-11-18T06:36:58.587+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.crawler] INFO: Overridden settings:
+[2024-11-18T06:36:58.587+0000] {docker.py:438} INFO - {'AUTOTHROTTLE_ENABLED': True,
+[2024-11-18T06:36:58.588+0000] {docker.py:438} INFO -  'AUTOTHROTTLE_START_DELAY': 0,
+[2024-11-18T06:36:58.588+0000] {docker.py:438} INFO -  'AUTOTHROTTLE_TARGET_CONCURRENCY': 10.0,
+[2024-11-18T06:36:58.588+0000] {docker.py:438} INFO -  'BOT_NAME': 'web',
+[2024-11-18T06:36:58.588+0000] {docker.py:438} INFO -  'CONCURRENT_REQUESTS': 512,
+[2024-11-18T06:36:58.588+0000] {docker.py:438} INFO -  'FEED_EXPORT_ENCODING': 'utf-8',
+[2024-11-18T06:36:58.589+0000] {docker.py:438} INFO -  'HTTPCACHE_ENABLED': True,
+[2024-11-18T06:36:58.589+0000] {docker.py:438} INFO -  'HTTPCACHE_EXPIRATION_SECS': 86400,
+[2024-11-18T06:36:58.589+0000] {docker.py:438} INFO -  'NEWSPIDER_MODULE': 'web.spiders',
+[2024-11-18T06:36:58.589+0000] {docker.py:438} INFO -  'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+[2024-11-18T06:36:58.590+0000] {docker.py:438} INFO -  'ROBOTSTXT_OBEY': True,
+[2024-11-18T06:36:58.590+0000] {docker.py:438} INFO -  'SPIDER_LOADER_WARN_ONLY': True,
+[2024-11-18T06:36:58.590+0000] {docker.py:438} INFO -  'SPIDER_MODULES': ['web.spiders']}
+[2024-11-18T06:36:58.643+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2024-11-18T06:36:58.644+0000] {docker.py:438} INFO - ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+[2024-11-18T06:36:58.644+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+[2024-11-18T06:36:58.644+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2024-11-18T06:36:58.645+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2024-11-18T06:36:58.645+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2024-11-18T06:36:58.645+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2024-11-18T06:36:58.646+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2024-11-18T06:36:58.646+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2024-11-18T06:36:58.646+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2024-11-18T06:36:58.646+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2024-11-18T06:36:58.647+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2024-11-18T06:36:58.647+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2024-11-18T06:36:58.647+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats',
+[2024-11-18T06:36:58.647+0000] {docker.py:438} INFO -  'scrapy.downloadermiddlewares.httpcache.HttpCacheMiddleware']
+[2024-11-18T06:36:58.648+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2024-11-18T06:36:58.648+0000] {docker.py:438} INFO - ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2024-11-18T06:36:58.648+0000] {docker.py:438} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2024-11-18T06:36:58.648+0000] {docker.py:438} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2024-11-18T06:36:58.648+0000] {docker.py:438} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2024-11-18T06:36:58.672+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "message": "Starting topology monitoring"}
+[2024-11-18T06:36:58.673+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "previousDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None>]>", "message": "Topology description changed"}
+[2024-11-18T06:36:58.675+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "serverHost": "mymongodb_container", "serverPort": 27017, "message": "Starting server monitoring"}
+[2024-11-18T06:36:58.675+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.connection] DEBUG: {"clientId": {"$oid": "673ae08a3584449d4b32ccf2"}, "message": "Connection pool created", "serverHost": "mymongodb_container", "serverPort": 27017}
+[2024-11-18T06:36:58.676+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.serverSelection] DEBUG: {"message": "Server selection started", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "673ae08a3584449d4b32ccf2"}}
+[2024-11-18T06:36:58.677+0000] {docker.py:438} INFO - 2024-11-18 06:36:58 [pymongo.serverSelection] DEBUG: {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "673ae08a3584449d4b32ccf2"}, "remainingTimeMS": 4}
+[2024-11-18T06:37:00.582+0000] {docker.py:438} INFO - 2024-11-18 06:37:00 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "serverHost": "mymongodb_container", "serverPort": 27017, "awaited": false, "durationMS": 1905.1502560032532, "failure": "\"AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')\"", "message": "Server heartbeat failed"}
+[2024-11-18T06:37:00.584+0000] {docker.py:438} INFO - 2024-11-18 06:37:00 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "previousDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None>]>", "newDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "message": "Topology description changed"}
+[2024-11-18T06:37:02.929+0000] {docker.py:438} INFO - 2024-11-18 06:37:02 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "serverHost": "mymongodb_container", "serverPort": 27017, "awaited": false, "durationMS": 1847.1509060000244, "failure": "\"AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')\"", "message": "Server heartbeat failed"}
+[2024-11-18T06:37:02.932+0000] {docker.py:438} INFO - 2024-11-18 06:37:02 [pymongo.topology] DEBUG: {"topologyId": {"$oid": "673ae08a3584449d4b32ccf2"}, "previousDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "newDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "message": "Topology description changed"}
+[2024-11-18T06:37:03.931+0000] {docker.py:438} INFO - 2024-11-18 06:37:03 [pymongo.serverSelection] DEBUG: {"message": "Server selection failed", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>", "clientId": {"$oid": "673ae08a3584449d4b32ccf2"}, "failure": "\"mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)\""}
+[2024-11-18T06:37:05.178+0000] {docker.py:438} INFO - hihi
+[2024-11-18T06:37:05.208+0000] {docker.py:438} INFO - Unhandled error in Deferred:
+[2024-11-18T06:37:05.209+0000] {docker.py:438} INFO - 2024-11-18 06:37:05 [twisted] CRITICAL: Unhandled error in Deferred:
+[2024-11-18T06:37:05.210+0000] {docker.py:438} INFO - Traceback (most recent call last):
+[2024-11-18T06:37:05.210+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/twisted/internet/defer.py", line 2017, in _inlineCallbacks
+[2024-11-18T06:37:05.211+0000] {docker.py:438} INFO -     result = context.run(gen.send, result)
+[2024-11-18T06:37:05.212+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/crawler.py", line 158, in crawl
+[2024-11-18T06:37:05.212+0000] {docker.py:438} INFO -     self.engine = self._create_engine()
+[2024-11-18T06:37:05.213+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/crawler.py", line 172, in _create_engine
+[2024-11-18T06:37:05.213+0000] {docker.py:438} INFO -     return ExecutionEngine(self, lambda _: self.stop())
+[2024-11-18T06:37:05.214+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/core/engine.py", line 101, in __init__
+[2024-11-18T06:37:05.214+0000] {docker.py:438} INFO -     self.scraper = Scraper(crawler)
+[2024-11-18T06:37:05.215+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/core/scraper.py", line 109, in __init__
+[2024-11-18T06:37:05.215+0000] {docker.py:438} INFO -     self.itemproc: ItemPipelineManager = itemproc_cls.from_crawler(crawler)
+[2024-11-18T06:37:05.216+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/middleware.py", line 90, in from_crawler
+[2024-11-18T06:37:05.216+0000] {docker.py:438} INFO -     return cls.from_settings(crawler.settings, crawler)
+[2024-11-18T06:37:05.217+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/middleware.py", line 67, in from_settings
+[2024-11-18T06:37:05.217+0000] {docker.py:438} INFO -     mw = create_instance(mwcls, settings, crawler)
+[2024-11-18T06:37:05.217+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/utils/misc.py", line 194, in create_instance
+[2024-11-18T06:37:05.218+0000] {docker.py:438} INFO -     instance = objcls(*args, **kwargs)
+[2024-11-18T06:37:05.218+0000] {docker.py:438} INFO -   File "/usr/src/app/web/pipelines.py", line 48, in __init__
+[2024-11-18T06:37:05.218+0000] {docker.py:438} INFO -     self.client.admin.command('ping')
+[2024-11-18T06:37:05.219+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/_csot.py", line 119, in csot_wrapper
+[2024-11-18T06:37:05.219+0000] {docker.py:438} INFO -     return func(self, *args, **kwargs)
+[2024-11-18T06:37:05.219+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/database.py", line 926, in command
+[2024-11-18T06:37:05.220+0000] {docker.py:438} INFO -     with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+[2024-11-18T06:37:05.220+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1701, in _conn_for_reads
+[2024-11-18T06:37:05.221+0000] {docker.py:438} INFO -     server = self._select_server(read_preference, session, operation)
+[2024-11-18T06:37:05.221+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1649, in _select_server
+[2024-11-18T06:37:05.221+0000] {docker.py:438} INFO -     server = topology.select_server(
+[2024-11-18T06:37:05.222+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 398, in select_server
+[2024-11-18T06:37:05.222+0000] {docker.py:438} INFO -     server = self._select_server(
+[2024-11-18T06:37:05.222+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 376, in _select_server
+[2024-11-18T06:37:05.222+0000] {docker.py:438} INFO -     servers = self.select_servers(
+[2024-11-18T06:37:05.223+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 283, in select_servers
+[2024-11-18T06:37:05.223+0000] {docker.py:438} INFO -     server_descriptions = self._select_servers_loop(
+[2024-11-18T06:37:05.223+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 333, in _select_servers_loop
+[2024-11-18T06:37:05.223+0000] {docker.py:438} INFO -     raise ServerSelectionTimeoutError(
+[2024-11-18T06:37:05.223+0000] {docker.py:438} INFO - pymongo.errors.ServerSelectionTimeoutError: mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2024-11-18T06:37:05.224+0000] {docker.py:438} INFO - 2024-11-18 06:37:05 [twisted] CRITICAL: 
+[2024-11-18T06:37:05.224+0000] {docker.py:438} INFO - Traceback (most recent call last):
+[2024-11-18T06:37:05.224+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/twisted/internet/defer.py", line 2017, in _inlineCallbacks
+[2024-11-18T06:37:05.225+0000] {docker.py:438} INFO -     result = context.run(gen.send, result)
+[2024-11-18T06:37:05.225+0000] {docker.py:438} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.226+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/crawler.py", line 158, in crawl
+[2024-11-18T06:37:05.226+0000] {docker.py:438} INFO -     self.engine = self._create_engine()
+[2024-11-18T06:37:05.226+0000] {docker.py:438} INFO -                   ^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.227+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/crawler.py", line 172, in _create_engine
+[2024-11-18T06:37:05.227+0000] {docker.py:438} INFO -     return ExecutionEngine(self, lambda _: self.stop())
+[2024-11-18T06:37:05.227+0000] {docker.py:438} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.228+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/core/engine.py", line 101, in __init__
+[2024-11-18T06:37:05.228+0000] {docker.py:438} INFO -     self.scraper = Scraper(crawler)
+[2024-11-18T06:37:05.228+0000] {docker.py:438} INFO -                    ^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.228+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/core/scraper.py", line 109, in __init__
+[2024-11-18T06:37:05.229+0000] {docker.py:438} INFO -     self.itemproc: ItemPipelineManager = itemproc_cls.from_crawler(crawler)
+[2024-11-18T06:37:05.229+0000] {docker.py:438} INFO -                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.229+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/middleware.py", line 90, in from_crawler
+[2024-11-18T06:37:05.229+0000] {docker.py:438} INFO -     return cls.from_settings(crawler.settings, crawler)
+[2024-11-18T06:37:05.229+0000] {docker.py:438} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.230+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/middleware.py", line 67, in from_settings
+[2024-11-18T06:37:05.230+0000] {docker.py:438} INFO -     mw = create_instance(mwcls, settings, crawler)
+[2024-11-18T06:37:05.230+0000] {docker.py:438} INFO -          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.230+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/scrapy/utils/misc.py", line 194, in create_instance
+[2024-11-18T06:37:05.230+0000] {docker.py:438} INFO -     instance = objcls(*args, **kwargs)
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -                ^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -   File "/usr/src/app/web/pipelines.py", line 48, in __init__
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -     self.client.admin.command('ping')
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/_csot.py", line 119, in csot_wrapper
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -     return func(self, *args, **kwargs)
+[2024-11-18T06:37:05.231+0000] {docker.py:438} INFO -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.232+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/database.py", line 926, in command
+[2024-11-18T06:37:05.232+0000] {docker.py:438} INFO -     with self._client._conn_for_reads(read_preference, session, operation=command_name) as (
+[2024-11-18T06:37:05.232+0000] {docker.py:438} INFO -          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.232+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1701, in _conn_for_reads
+[2024-11-18T06:37:05.233+0000] {docker.py:438} INFO -     server = self._select_server(read_preference, session, operation)
+[2024-11-18T06:37:05.233+0000] {docker.py:438} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.233+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/mongo_client.py", line 1649, in _select_server
+[2024-11-18T06:37:05.234+0000] {docker.py:438} INFO -     server = topology.select_server(
+[2024-11-18T06:37:05.234+0000] {docker.py:438} INFO -              ^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.234+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 398, in select_server
+[2024-11-18T06:37:05.234+0000] {docker.py:438} INFO -     server = self._select_server(
+[2024-11-18T06:37:05.235+0000] {docker.py:438} INFO -              ^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.235+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 376, in _select_server
+[2024-11-18T06:37:05.235+0000] {docker.py:438} INFO -     servers = self.select_servers(
+[2024-11-18T06:37:05.235+0000] {docker.py:438} INFO -               ^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.236+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 283, in select_servers
+[2024-11-18T06:37:05.236+0000] {docker.py:438} INFO -     server_descriptions = self._select_servers_loop(
+[2024-11-18T06:37:05.236+0000] {docker.py:438} INFO -                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-18T06:37:05.236+0000] {docker.py:438} INFO -   File "/usr/local/lib/python3.11/site-packages/pymongo/synchronous/topology.py", line 333, in _select_servers_loop
+[2024-11-18T06:37:05.237+0000] {docker.py:438} INFO -     raise ServerSelectionTimeoutError(
+[2024-11-18T06:37:05.237+0000] {docker.py:438} INFO - pymongo.errors.ServerSelectionTimeoutError: mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 673ae08a3584449d4b32ccf2, topology_type: Unknown, servers: [<ServerDescription ('mymongodb_container', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mymongodb_container:27017: [Errno -2] Name or service not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[2024-11-18T06:37:05.270+0000] {docker.py:438} INFO - Cào dữ liệu và đẩy dữ liệu lên MongoDB thành công, tiếp theo sẽ chạy Python script main_MongoDBConnectKafka.py ...
+[2024-11-18T06:37:05.595+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-18T06:37:05.596+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=run_entrypoint_sh, task_id=run_entrypoint_sh, run_id=manual__2024-11-18T06:36:37.187428+00:00, execution_date=20241118T063637, start_date=20241118T063637, end_date=20241118T063705
+[2024-11-18T06:37:05.627+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-18T06:37:05.639+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-18T06:37:05.641+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

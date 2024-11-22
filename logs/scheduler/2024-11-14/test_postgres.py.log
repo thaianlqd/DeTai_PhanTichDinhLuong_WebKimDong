@@ -1,0 +1,383 @@
+[2024-11-14T18:48:37.788+0000] {processor.py:186} INFO - Started process (PID=219) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:48:37.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:48:37.791+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:48:37.790+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:48:37.820+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:48:37.844+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.061 seconds
+[2024-11-14T18:49:08.581+0000] {processor.py:186} INFO - Started process (PID=228) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:08.583+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:49:08.594+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:49:08.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:08.620+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:08.663+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.098 seconds
+[2024-11-14T18:49:39.498+0000] {processor.py:186} INFO - Started process (PID=239) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:39.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:49:39.503+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:49:39.502+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:39.526+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:49:39.548+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.061 seconds
+[2024-11-14T18:50:10.448+0000] {processor.py:186} INFO - Started process (PID=249) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:10.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:50:10.452+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:50:10.451+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:10.487+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:10.502+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.059 seconds
+[2024-11-14T18:50:41.080+0000] {processor.py:186} INFO - Started process (PID=259) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:41.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:50:41.084+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:50:41.083+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:41.094+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:50:41.110+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.035 seconds
+[2024-11-14T18:55:23.960+0000] {processor.py:186} INFO - Started process (PID=241) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:23.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:55:23.965+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:55:23.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:23.995+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:24.099+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.207 seconds
+[2024-11-14T18:55:54.433+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:54.435+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:55:54.438+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:55:54.438+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:54.452+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:55:54.472+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.051 seconds
+[2024-11-14T18:56:24.646+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:24.647+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:56:24.650+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:56:24.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:24.663+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:24.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.040 seconds
+[2024-11-14T18:56:54.959+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:54.961+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:56:54.966+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:56:54.965+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:55.002+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:56:55.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.079 seconds
+[2024-11-14T18:57:25.520+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:25.523+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:57:25.578+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:57:25.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:25.603+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:25.772+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.474 seconds
+[2024-11-14T18:57:56.423+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:56.434+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:57:56.459+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:57:56.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:56.488+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:57:56.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.184 seconds
+[2024-11-14T18:58:27.077+0000] {processor.py:186} INFO - Started process (PID=298) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:27.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:58:27.095+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:58:27.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:27.116+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:27.187+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.139 seconds
+[2024-11-14T18:58:57.838+0000] {processor.py:186} INFO - Started process (PID=308) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:57.841+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:58:57.847+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:58:57.846+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:57.891+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:58:57.916+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.103 seconds
+[2024-11-14T18:59:28.854+0000] {processor.py:186} INFO - Started process (PID=318) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:28.856+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:59:28.861+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:59:28.860+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:28.922+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:28.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.093 seconds
+[2024-11-14T18:59:59.704+0000] {processor.py:186} INFO - Started process (PID=328) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:59.705+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T18:59:59.708+0000] {logging_mixin.py:190} INFO - [2024-11-14T18:59:59.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:59.717+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T18:59:59.728+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.030 seconds
+[2024-11-14T19:00:30.041+0000] {processor.py:186} INFO - Started process (PID=338) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:00:30.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:00:30.046+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:00:30.046+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:00:30.074+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:00:30.107+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.074 seconds
+[2024-11-14T19:01:00.326+0000] {processor.py:186} INFO - Started process (PID=348) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:00.326+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:01:00.329+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:01:00.328+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:00.338+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:00.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.034 seconds
+[2024-11-14T19:01:30.875+0000] {processor.py:186} INFO - Started process (PID=358) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:30.876+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:01:30.878+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:01:30.878+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:30.894+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:01:30.908+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.038 seconds
+[2024-11-14T19:02:01.361+0000] {processor.py:186} INFO - Started process (PID=368) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:01.378+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:02:01.384+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:02:01.383+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:01.537+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:01.554+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.202 seconds
+[2024-11-14T19:02:32.389+0000] {processor.py:186} INFO - Started process (PID=378) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:32.392+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:02:32.394+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:02:32.394+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:32.419+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:02:32.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.049 seconds
+[2024-11-14T19:03:03.173+0000] {processor.py:186} INFO - Started process (PID=388) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:03.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:03:03.176+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:03:03.176+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:03.198+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:03.212+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.044 seconds
+[2024-11-14T19:03:33.472+0000] {processor.py:186} INFO - Started process (PID=398) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:33.473+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:03:33.475+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:03:33.475+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:33.483+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:03:33.495+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.029 seconds
+[2024-11-14T19:04:03.998+0000] {processor.py:186} INFO - Started process (PID=408) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:04.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:04:04.051+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:04:04.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:04.114+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:04.227+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.399 seconds
+[2024-11-14T19:04:34.690+0000] {processor.py:186} INFO - Started process (PID=418) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:34.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:04:34.693+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:04:34.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:34.717+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:04:34.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.052 seconds
+[2024-11-14T19:05:05.754+0000] {processor.py:186} INFO - Started process (PID=428) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:05.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:05:05.769+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:05:05.768+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:06.010+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:06.031+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.288 seconds
+[2024-11-14T19:05:36.598+0000] {processor.py:186} INFO - Started process (PID=438) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:36.600+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:05:36.604+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:05:36.604+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:36.640+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:05:36.657+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.069 seconds
+[2024-11-14T19:06:07.274+0000] {processor.py:186} INFO - Started process (PID=448) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:07.275+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:06:07.278+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:06:07.277+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:07.290+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:07.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.039 seconds
+[2024-11-14T19:06:37.407+0000] {processor.py:186} INFO - Started process (PID=458) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:37.408+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:06:37.410+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:06:37.410+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:37.419+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:06:37.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.030 seconds
+[2024-11-14T19:07:07.862+0000] {processor.py:186} INFO - Started process (PID=468) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:07.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:07:07.866+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:07:07.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:07.882+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:07.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.037 seconds
+[2024-11-14T19:07:38.647+0000] {processor.py:186} INFO - Started process (PID=478) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:38.650+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:07:38.656+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:07:38.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:38.694+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:07:38.711+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.079 seconds
+[2024-11-14T19:08:09.267+0000] {processor.py:186} INFO - Started process (PID=488) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:09.269+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:08:09.275+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:08:09.275+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:09.318+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:09.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.097 seconds
+[2024-11-14T19:08:39.834+0000] {processor.py:186} INFO - Started process (PID=498) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:39.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:08:39.839+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:08:39.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:39.863+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:08:39.883+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.058 seconds
+[2024-11-14T19:21:11.980+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:11.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:21:11.984+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:11.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:12.136+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:12.409+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.409+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.413+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.413+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.419+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.419+0000] {override.py:1759} ERROR - Add Permission: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ab_permission_name_uq"
+DETAIL:  Key (name)=(can_edit) already exists.
+
+[SQL: INSERT INTO ab_permission (name) VALUES (%(name)s) RETURNING ab_permission.id]
+[parameters: {'name': 'can_edit'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+[2024-11-14T19:21:12.423+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.422+0000] {override.py:1911} INFO - Created Permission View: None on DAG:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.428+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.428+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.436+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.436+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.441+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.441+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.445+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.445+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.458+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.458+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:21:12.473+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.472+0000] {dag.py:3262} INFO - Creating ORM DAG for kafka_to_postgres_pipeline
+[2024-11-14T19:21:12.481+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:12.481+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:21:12.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.704 seconds
+[2024-11-14T19:21:43.035+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:43.039+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:21:43.066+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:43.065+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:43.575+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:21:43.755+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:43.755+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:21:43.875+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:21:43.875+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:21:43.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.909 seconds
+[2024-11-14T19:22:14.748+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:14.756+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:22:14.763+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:14.763+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:15.258+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:15.342+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:15.342+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:22:15.713+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:15.713+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:22:15.750+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.027 seconds
+[2024-11-14T19:22:46.548+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:46.569+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:22:46.586+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:46.585+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:46.900+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:22:47.010+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:47.010+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:22:47.124+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:22:47.124+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:22:47.153+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.641 seconds
+[2024-11-14T19:23:18.293+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:18.295+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:23:18.300+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:18.299+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:18.965+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:19.021+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:19.021+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:23:22.883+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:22.882+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:23:22.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 4.707 seconds
+[2024-11-14T19:23:53.567+0000] {processor.py:186} INFO - Started process (PID=288) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:53.572+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:23:53.578+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:53.577+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:53.773+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:23:54.430+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:54.430+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:23:54.451+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:23:54.451+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:23:54.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.937 seconds
+[2024-11-14T19:24:24.857+0000] {processor.py:186} INFO - Started process (PID=298) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:24.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:24:24.866+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:24.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:25.152+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:25.169+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:25.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:24:25.187+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:25.187+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:24:25.216+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.372 seconds
+[2024-11-14T19:24:55.934+0000] {processor.py:186} INFO - Started process (PID=324) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:55.935+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:24:55.941+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:55.940+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:56.074+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:24:56.097+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:56.097+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:24:57.712+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:24:57.712+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:24:57.767+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.855 seconds
+[2024-11-14T19:25:28.251+0000] {processor.py:186} INFO - Started process (PID=341) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:25:28.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:25:28.254+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:25:28.254+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:25:28.448+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:25:29.569+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:25:29.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:25:29.591+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:25:29.590+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-11-14T19:25:29.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.379 seconds
+[2024-11-14T19:26:01.526+0000] {processor.py:186} INFO - Started process (PID=473) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:01.545+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:26:01.592+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:01.591+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:14.233+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:14.269+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:14.269+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:26:14.325+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 13.683 seconds
+[2024-11-14T19:26:22.130+0000] {processor.py:186} INFO - Started process (PID=499) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:22.134+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:26:22.141+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:22.141+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:22.239+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:22.256+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:22.256+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'kafka_to_postgres_pipeline', 'Task Id': 'run_spark_job', 'Run Id': 'scheduled__2023-01-08T00:00:00+00:00', 'Hostname': '38e257a4ebe9'}
+[2024-11-14T19:26:22.273+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:22.272+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=kafka_to_postgres_pipeline, task_id=run_spark_job, run_id=scheduled__2023-01-08T00:00:00+00:00, execution_date=20230108T000000, start_date=20241114T192559, end_date=20241114T192622
+[2024-11-14T19:26:22.429+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:22.429+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: kafka_to_postgres_pipeline.run_spark_job scheduled__2023-01-08T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-11-14T19:26:22.442+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:22.442+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:26:22.515+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.400 seconds
+[2024-11-14T19:26:32.101+0000] {processor.py:186} INFO - Started process (PID=504) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:32.102+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:26:32.106+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.106+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:32.202+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:26:32.219+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.219+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'kafka_to_postgres_pipeline', 'Task Id': 'create_tables', 'Run Id': 'scheduled__2023-01-10T00:00:00+00:00', 'Hostname': '38e257a4ebe9'}
+[2024-11-14T19:26:32.239+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.239+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=kafka_to_postgres_pipeline, task_id=create_tables, run_id=scheduled__2023-01-10T00:00:00+00:00, execution_date=20230110T000000, start_date=20241114T192559, end_date=20241114T192632
+[2024-11-14T19:26:32.391+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.391+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: kafka_to_postgres_pipeline.create_tables scheduled__2023-01-10T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-11-14T19:26:32.394+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.394+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'kafka_to_postgres_pipeline', 'Task Id': 'create_tables', 'Run Id': 'scheduled__2023-01-15T00:00:00+00:00', 'Hostname': '38e257a4ebe9'}
+[2024-11-14T19:26:32.401+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.401+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=kafka_to_postgres_pipeline, task_id=create_tables, run_id=scheduled__2023-01-15T00:00:00+00:00, execution_date=20230115T000000, start_date=20241114T192559, end_date=20241114T192632
+[2024-11-14T19:26:32.405+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.405+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: kafka_to_postgres_pipeline.create_tables scheduled__2023-01-15T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-11-14T19:26:32.407+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.407+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'kafka_to_postgres_pipeline', 'Task Id': 'create_tables', 'Run Id': 'scheduled__2023-01-10T00:00:00+00:00', 'Hostname': '38e257a4ebe9'}
+[2024-11-14T19:26:32.412+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.412+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=kafka_to_postgres_pipeline, task_id=create_tables, run_id=scheduled__2023-01-10T00:00:00+00:00, execution_date=20230110T000000, start_date=20241114T192559, end_date=20241114T192632
+[2024-11-14T19:26:32.415+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.415+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: kafka_to_postgres_pipeline.create_tables scheduled__2023-01-10T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-11-14T19:26:32.426+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:26:32.426+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:26:32.451+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.354 seconds
+[2024-11-14T19:27:02.746+0000] {processor.py:186} INFO - Started process (PID=514) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:02.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:27:02.757+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:02.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:02.918+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:02.950+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:02.949+0000] {taskinstance.py:3313} ERROR - {'DAG Id': 'kafka_to_postgres_pipeline', 'Task Id': 'create_tables', 'Run Id': 'scheduled__2023-01-15T00:00:00+00:00', 'Hostname': '38e257a4ebe9'}
+[2024-11-14T19:27:03.281+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:03.281+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=kafka_to_postgres_pipeline, task_id=create_tables, run_id=scheduled__2023-01-15T00:00:00+00:00, execution_date=20230115T000000, start_date=20241114T192559, end_date=20241114T192702
+[2024-11-14T19:27:03.295+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:03.295+0000] {processor.py:876} INFO - Executed callback for <TaskInstance: kafka_to_postgres_pipeline.create_tables scheduled__2023-01-15T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2024-11-14T19:27:03.316+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:03.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:27:03.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.619 seconds
+[2024-11-14T19:27:33.659+0000] {processor.py:186} INFO - Started process (PID=524) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:33.661+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:27:33.664+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:33.663+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:33.787+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:27:34.741+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:27:34.740+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:27:34.841+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.188 seconds
+[2024-11-14T19:28:05.546+0000] {processor.py:186} INFO - Started process (PID=534) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:05.548+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:28:05.550+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:28:05.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:05.758+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:05.784+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:28:05.784+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:28:05.814+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.276 seconds
+[2024-11-14T19:28:36.211+0000] {processor.py:186} INFO - Started process (PID=544) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:36.213+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:28:36.215+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:28:36.215+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:36.454+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:28:36.481+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:28:36.481+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:28:36.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.317 seconds
+[2024-11-14T19:29:07.006+0000] {processor.py:186} INFO - Started process (PID=554) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:07.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:29:07.015+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:29:07.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:07.245+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:07.273+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:29:07.273+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:29:07.315+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.316 seconds
+[2024-11-14T19:29:37.899+0000] {processor.py:186} INFO - Started process (PID=564) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:37.901+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:29:37.903+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:29:37.903+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:38.000+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:29:38.186+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:29:38.186+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:29:38.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.360 seconds
+[2024-11-14T19:30:08.913+0000] {processor.py:186} INFO - Started process (PID=574) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:08.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:30:08.916+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:30:08.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:09.121+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:09.142+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:30:09.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:30:09.178+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.271 seconds
+[2024-11-14T19:30:39.813+0000] {processor.py:186} INFO - Started process (PID=584) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:39.817+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:30:39.823+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:30:39.823+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:40.121+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:30:40.145+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:30:40.144+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:30:40.215+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 0.415 seconds
+[2024-11-14T19:31:10.659+0000] {processor.py:186} INFO - Started process (PID=597) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:31:10.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:31:10.662+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:31:10.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:31:11.547+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:31:11.599+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:31:11.599+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:31:11.629+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:31:11.629+0000] {dag.py:4180} INFO - Setting next_dagrun for kafka_to_postgres_pipeline to 2023-01-16 00:00:00+00:00, run_after=2023-01-17 00:00:00+00:00
+[2024-11-14T19:31:11.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 1.002 seconds
+[2024-11-14T19:32:23.254+0000] {processor.py:186} INFO - Started process (PID=616) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:32:23.562+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:32:23.644+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:32:23.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:32:30.106+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:32:33.474+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:32:33.443+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:32:36.074+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 13.137 seconds
+[2024-11-14T19:33:24.709+0000] {processor.py:186} INFO - Started process (PID=663) to work on /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:33:24.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_postgres.py for tasks to queue
+[2024-11-14T19:33:24.853+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:33:24.851+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:33:51.188+0000] {logging_mixin.py:190} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7f3c91227a60>
+[2024-11-14T19:33:51.191+0000] {logging_mixin.py:190} WARNING - Traceback (most recent call last):
+[2024-11-14T19:33:51.192+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/weakref.py", line 369, in remove
+[2024-11-14T19:33:51.193+0000] {logging_mixin.py:190} WARNING -     def remove(k, selfref=ref(self)):
+[2024-11-14T19:33:51.194+0000] {logging_mixin.py:190} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/manager.py", line 466, in _exit_gracefully
+[2024-11-14T19:33:51.195+0000] {logging_mixin.py:190} WARNING -     self.log.debug("Current Stacktrace is: %s", "\n".join(map(str, inspect.stack())))
+[2024-11-14T19:33:51.195+0000] {logging_mixin.py:190} WARNING -                                                                    ^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.196+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1777, in stack
+[2024-11-14T19:33:51.196+0000] {logging_mixin.py:190} WARNING -     return getouterframes(sys._getframe(1), context)
+[2024-11-14T19:33:51.197+0000] {logging_mixin.py:190} WARNING -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.198+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1752, in getouterframes
+[2024-11-14T19:33:51.199+0000] {logging_mixin.py:190} WARNING -     traceback_info = getframeinfo(frame, context)
+[2024-11-14T19:33:51.199+0000] {logging_mixin.py:190} WARNING -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.200+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1710, in getframeinfo
+[2024-11-14T19:33:51.200+0000] {logging_mixin.py:190} WARNING -     filename = getsourcefile(frame) or getfile(frame)
+[2024-11-14T19:33:51.201+0000] {logging_mixin.py:190} WARNING -                ^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.202+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 970, in getsourcefile
+[2024-11-14T19:33:51.202+0000] {logging_mixin.py:190} WARNING -     module = getmodule(object, filename)
+[2024-11-14T19:33:51.203+0000] {logging_mixin.py:190} WARNING -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.203+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1007, in getmodule
+[2024-11-14T19:33:51.204+0000] {logging_mixin.py:190} WARNING -     if ismodule(module) and hasattr(module, '__file__'):
+[2024-11-14T19:33:51.204+0000] {logging_mixin.py:190} WARNING -                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.204+0000] {logging_mixin.py:190} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/manager.py", line 466, in _exit_gracefully
+[2024-11-14T19:33:51.205+0000] {logging_mixin.py:190} WARNING -     self.log.debug("Current Stacktrace is: %s", "\n".join(map(str, inspect.stack())))
+[2024-11-14T19:33:51.206+0000] {logging_mixin.py:190} WARNING -                                                                    ^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.206+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1777, in stack
+[2024-11-14T19:33:51.207+0000] {logging_mixin.py:190} WARNING -     return getouterframes(sys._getframe(1), context)
+[2024-11-14T19:33:51.207+0000] {logging_mixin.py:190} WARNING -            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.207+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1752, in getouterframes
+[2024-11-14T19:33:51.208+0000] {logging_mixin.py:190} WARNING -     traceback_info = getframeinfo(frame, context)
+[2024-11-14T19:33:51.209+0000] {logging_mixin.py:190} WARNING -                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.209+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1714, in getframeinfo
+[2024-11-14T19:33:51.210+0000] {logging_mixin.py:190} WARNING -     lines, lnum = findsource(frame)
+[2024-11-14T19:33:51.210+0000] {logging_mixin.py:190} WARNING -                   ^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.211+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1078, in findsource
+[2024-11-14T19:33:51.211+0000] {logging_mixin.py:190} WARNING -     file = getsourcefile(object)
+[2024-11-14T19:33:51.212+0000] {logging_mixin.py:190} WARNING -            ^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.212+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 970, in getsourcefile
+[2024-11-14T19:33:51.213+0000] {logging_mixin.py:190} WARNING -     module = getmodule(object, filename)
+[2024-11-14T19:33:51.213+0000] {logging_mixin.py:190} WARNING -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.214+0000] {logging_mixin.py:190} WARNING -   File "/usr/local/lib/python3.12/inspect.py", line 1007, in getmodule
+[2024-11-14T19:33:51.215+0000] {logging_mixin.py:190} WARNING -     if ismodule(module) and hasattr(module, '__file__'):
+[2024-11-14T19:33:51.215+0000] {logging_mixin.py:190} WARNING -                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2024-11-14T19:33:51.216+0000] {logging_mixin.py:190} WARNING -   File "/home/airflow/.local/lib/python3.12/site-packages/airflow/dag_processing/manager.py", line 470, in _exit_gracefully
+[2024-11-14T19:33:51.216+0000] {logging_mixin.py:190} WARNING -     sys.exit(os.EX_OK)
+[2024-11-14T19:33:51.217+0000] {logging_mixin.py:190} WARNING - SystemExit: 0
+[2024-11-14T19:33:51.338+0000] {processor.py:925} INFO - DAG(s) 'kafka_to_postgres_pipeline' retrieved from /opt/airflow/dags/test_postgres.py
+[2024-11-14T19:33:51.408+0000] {logging_mixin.py:190} INFO - [2024-11-14T19:33:51.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-14T19:33:51.485+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_postgres.py took 27.308 seconds

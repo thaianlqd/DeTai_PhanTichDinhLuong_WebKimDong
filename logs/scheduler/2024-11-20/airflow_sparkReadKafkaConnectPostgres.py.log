@@ -1,0 +1,51 @@
+[2024-11-20T14:44:25.180+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:25.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py for tasks to queue
+[2024-11-20T14:44:25.182+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.182+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:25.220+0000] {processor.py:925} INFO - DAG(s) 'run_spark_container_compose' retrieved from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:25.322+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.320+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:run_spark_container_compose
+[2024-11-20T14:44:25.330+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.329+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:run_spark_container_compose
+[2024-11-20T14:44:25.335+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.335+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:run_spark_container_compose
+[2024-11-20T14:44:25.342+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.341+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:run_spark_container_compose
+[2024-11-20T14:44:25.346+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.346+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:run_spark_container_compose
+[2024-11-20T14:44:25.352+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.352+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:run_spark_container_compose
+[2024-11-20T14:44:25.358+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.357+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:run_spark_container_compose
+[2024-11-20T14:44:25.358+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.358+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:44:25.368+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.368+0000] {dag.py:3262} INFO - Creating ORM DAG for run_spark_container_compose
+[2024-11-20T14:44:25.369+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:25.369+0000] {dag.py:4180} INFO - Setting next_dagrun for run_spark_container_compose to None, run_after=None
+[2024-11-20T14:44:25.384+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py took 0.207 seconds
+[2024-11-20T14:44:56.119+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:56.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py for tasks to queue
+[2024-11-20T14:44:56.120+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:56.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:56.134+0000] {processor.py:925} INFO - DAG(s) 'run_spark_container_compose' retrieved from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:44:56.154+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:56.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:44:56.225+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:44:56.225+0000] {dag.py:4180} INFO - Setting next_dagrun for run_spark_container_compose to None, run_after=None
+[2024-11-20T14:44:56.241+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py took 0.127 seconds
+[2024-11-20T14:45:26.695+0000] {processor.py:186} INFO - Started process (PID=265) to work on /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:45:26.696+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py for tasks to queue
+[2024-11-20T14:45:26.697+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.697+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:45:26.714+0000] {processor.py:925} INFO - DAG(s) 'run_spark_container_compose' retrieved from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:45:26.737+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:45:26.749+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:45:26.749+0000] {dag.py:4180} INFO - Setting next_dagrun for run_spark_container_compose to None, run_after=None
+[2024-11-20T14:45:26.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py took 0.077 seconds
+[2024-11-20T14:47:08.944+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:08.944+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py for tasks to queue
+[2024-11-20T14:47:08.945+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:08.945+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:08.961+0000] {processor.py:925} INFO - DAG(s) 'run_spark_container_compose' retrieved from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:09.042+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.041+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:run_spark_container_compose
+[2024-11-20T14:47:09.051+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.050+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:run_spark_container_compose
+[2024-11-20T14:47:09.056+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.056+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:run_spark_container_compose
+[2024-11-20T14:47:09.062+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.062+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:run_spark_container_compose
+[2024-11-20T14:47:09.068+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.067+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:run_spark_container_compose
+[2024-11-20T14:47:09.074+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.073+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:run_spark_container_compose
+[2024-11-20T14:47:09.079+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.078+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:run_spark_container_compose
+[2024-11-20T14:47:09.079+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.079+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:47:09.090+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.090+0000] {dag.py:3262} INFO - Creating ORM DAG for run_spark_container_compose
+[2024-11-20T14:47:09.091+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:09.090+0000] {dag.py:4180} INFO - Setting next_dagrun for run_spark_container_compose to None, run_after=None
+[2024-11-20T14:47:09.106+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py took 0.166 seconds
+[2024-11-20T14:47:39.800+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:39.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py for tasks to queue
+[2024-11-20T14:47:39.801+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:39.801+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:39.818+0000] {processor.py:925} INFO - DAG(s) 'run_spark_container_compose' retrieved from /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py
+[2024-11-20T14:47:39.837+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:39.837+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-20T14:47:39.856+0000] {logging_mixin.py:190} INFO - [2024-11-20T14:47:39.856+0000] {dag.py:4180} INFO - Setting next_dagrun for run_spark_container_compose to None, run_after=None
+[2024-11-20T14:47:39.877+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/airflow_sparkReadKafkaConnectPostgres.py took 0.081 seconds

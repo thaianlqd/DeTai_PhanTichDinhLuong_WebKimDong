@@ -1,0 +1,397 @@
+[2024-11-12T16:21:47.078+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-12T16:21:47.145+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-12T16:21:47.161+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-12T16:21:47.163+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-12T16:21:47.197+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_scrapy> on 2023-01-01 00:20:00+00:00
+[2024-11-12T16:21:47.253+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T16:21:47.257+0000] {standard_task_runner.py:72} INFO - Started process 376 to run task
+[2024-11-12T16:21:47.241+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'example_pipeline', 'run_scrapy', 'scheduled__2023-01-01T00:20:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmp2cynfpvt']
+[2024-11-12T16:21:47.275+0000] {standard_task_runner.py:105} INFO - Job 30: Subtask run_scrapy
+[2024-11-12T16:21:47.410+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-12T16:21:47.638+0000] {task_command.py:467} INFO - Running <TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [running]> on host 351dab94543d
+[2024-11-12T16:21:47.643+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-12T16:21:48.822+0000] {abstractoperator.py:780} ERROR - Exception rendering Jinja template for task 'run_scrapy', field 'bash_command'. Template: 'python /opt/airflow/dags/scripts/run_scrapy.sh'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 772, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: python /opt/airflow/dags/scripts/run_scrapy.sh
+[2024-11-12T16:21:48.833+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3115, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3534, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1430, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 772, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: python /opt/airflow/dags/scripts/run_scrapy.sh
+[2024-11-12T16:21:48.873+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=example_pipeline, task_id=run_scrapy, run_id=scheduled__2023-01-01T00:20:00+00:00, execution_date=20230101T002000, start_date=20241112T162147, end_date=20241112T162148
+[2024-11-12T16:21:48.932+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-12T16:21:48.936+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 30 for task run_scrapy (python /opt/airflow/dags/scripts/run_scrapy.sh; 376)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3115, in _execute_task_with_callbacks
+    task_orig = self.render_templates(context=context, jinja_env=jinja_env)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3534, in render_templates
+    original_task.render_template_fields(context, jinja_env)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1430, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/abstractoperator.py", line 772, in _do_render_template_fields
+    rendered_content = self.render_template(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/template/templater.py", line 168, in render_template
+    template = jinja_env.get_template(value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/jinja2/loaders.py", line 207, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: python /opt/airflow/dags/scripts/run_scrapy.sh
+[2024-11-12T16:21:49.055+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-12T16:21:49.547+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T16:21:49.589+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-11-13T05:00:38.014+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-13T05:00:38.076+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T05:00:38.093+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T05:00:38.094+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-13T05:00:38.142+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_scrapy> on 2023-01-01 00:20:00+00:00
+[2024-11-13T05:00:38.204+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=539) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-13T05:00:38.208+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'example_pipeline', 'run_scrapy', 'scheduled__2023-01-01T00:20:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmpkgnr2ng_']
+[2024-11-13T05:00:38.222+0000] {standard_task_runner.py:72} INFO - Started process 559 to run task
+[2024-11-13T05:00:38.225+0000] {standard_task_runner.py:105} INFO - Job 30: Subtask run_scrapy
+[2024-11-13T05:00:38.312+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T05:00:38.497+0000] {task_command.py:467} INFO - Running <TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [running]> on host 98aaf3cf0496
+[2024-11-13T05:00:38.505+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T05:00:38.790+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_pipeline' AIRFLOW_CTX_TASK_ID='run_scrapy' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:20:00+00:00'
+[2024-11-13T05:00:38.802+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-13T05:00:38.931+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-13T05:00:38.984+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'docker build -t thaian .']
+[2024-11-13T05:00:39.091+0000] {subprocess.py:99} INFO - Output:
+[2024-11-13T05:00:39.988+0000] {subprocess.py:106} INFO - DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+[2024-11-13T05:00:39.990+0000] {subprocess.py:106} INFO -             Install the buildx component to build images with BuildKit:
+[2024-11-13T05:00:39.992+0000] {subprocess.py:106} INFO -             https://docs.docker.com/go/buildx/
+[2024-11-13T05:00:39.993+0000] {subprocess.py:106} INFO - 
+[2024-11-13T05:00:39.994+0000] {subprocess.py:106} INFO - unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /tmp/airflowtmptm5dii3j/Dockerfile: no such file or directory
+[2024-11-13T05:00:39.995+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2024-11-13T05:00:40.090+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T05:00:40.105+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=example_pipeline, task_id=run_scrapy, run_id=scheduled__2023-01-01T00:20:00+00:00, execution_date=20230101T002000, start_date=20241113T050038, end_date=20241113T050040
+[2024-11-13T05:00:40.156+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-13T05:00:40.159+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 30 for task run_scrapy (Bash command failed. The command returned a non-zero exit code 1.; 559)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T05:00:40.277+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-13T05:00:40.362+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T05:00:40.382+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-11-13T11:11:04.866+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-13T11:11:04.888+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T11:11:04.904+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T11:11:04.904+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-13T11:11:04.934+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_scrapy> on 2023-01-01 00:20:00+00:00
+[2024-11-13T11:11:04.963+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=420) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-13T11:11:04.960+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'example_pipeline', 'run_scrapy', 'scheduled__2023-01-01T00:20:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmpqudf343_']
+[2024-11-13T11:11:04.967+0000] {standard_task_runner.py:72} INFO - Started process 431 to run task
+[2024-11-13T11:11:04.968+0000] {standard_task_runner.py:105} INFO - Job 31: Subtask run_scrapy
+[2024-11-13T11:11:05.034+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T11:11:05.205+0000] {task_command.py:467} INFO - Running <TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [running]> on host ea5fa4dd0e6a
+[2024-11-13T11:11:05.208+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T11:11:05.460+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_pipeline' AIRFLOW_CTX_TASK_ID='run_scrapy' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:20:00+00:00'
+[2024-11-13T11:11:05.466+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-13T11:11:05.497+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-13T11:11:05.506+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'python -m scrapy runspider web/spiders/CaoWeb.py']
+[2024-11-13T11:11:05.554+0000] {subprocess.py:99} INFO - Output:
+[2024-11-13T11:11:05.836+0000] {subprocess.py:106} INFO - /home/airflow/.local/bin/python: No module named scrapy
+[2024-11-13T11:11:05.839+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2024-11-13T11:11:05.889+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T11:11:05.898+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=example_pipeline, task_id=run_scrapy, run_id=scheduled__2023-01-01T00:20:00+00:00, execution_date=20230101T002000, start_date=20241113T111104, end_date=20241113T111105
+[2024-11-13T11:11:05.917+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-13T11:11:05.920+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 31 for task run_scrapy (Bash command failed. The command returned a non-zero exit code 1.; 431)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T11:11:05.958+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-13T11:11:05.992+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T11:11:05.998+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-11-13T12:43:56.744+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-13T12:43:56.775+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T12:43:56.789+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [queued]>
+[2024-11-13T12:43:56.790+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-13T12:43:56.809+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): run_scrapy> on 2023-01-01 00:20:00+00:00
+[2024-11-13T12:43:56.826+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=653) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-13T12:43:56.826+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'example_pipeline', 'run_scrapy', 'scheduled__2023-01-01T00:20:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmp7gfgka0b']
+[2024-11-13T12:43:56.830+0000] {standard_task_runner.py:72} INFO - Started process 659 to run task
+[2024-11-13T12:43:56.831+0000] {standard_task_runner.py:105} INFO - Job 29: Subtask run_scrapy
+[2024-11-13T12:43:56.869+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T12:43:56.942+0000] {task_command.py:467} INFO - Running <TaskInstance: example_pipeline.run_scrapy scheduled__2023-01-01T00:20:00+00:00 [running]> on host 64f1a6c22ae3
+[2024-11-13T12:43:56.947+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:470 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T12:43:57.079+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='example_pipeline' AIRFLOW_CTX_TASK_ID='run_scrapy' AIRFLOW_CTX_EXECUTION_DATE='2023-01-01T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-01-01T00:20:00+00:00'
+[2024-11-13T12:43:57.081+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-13T12:43:57.103+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-13T12:43:57.107+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'docker build -t thaian ./dags']
+[2024-11-13T12:43:57.133+0000] {subprocess.py:99} INFO - Output:
+[2024-11-13T12:43:57.170+0000] {subprocess.py:106} INFO - DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+[2024-11-13T12:43:57.172+0000] {subprocess.py:106} INFO -             Install the buildx component to build images with BuildKit:
+[2024-11-13T12:43:57.172+0000] {subprocess.py:106} INFO -             https://docs.docker.com/go/buildx/
+[2024-11-13T12:43:57.173+0000] {subprocess.py:106} INFO - 
+[2024-11-13T12:43:57.174+0000] {subprocess.py:106} INFO - unable to prepare context: path "./dags" not found
+[2024-11-13T12:43:57.174+0000] {subprocess.py:110} INFO - Command exited with return code 1
+[2024-11-13T12:43:57.193+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T12:43:57.200+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=example_pipeline, task_id=run_scrapy, run_id=scheduled__2023-01-01T00:20:00+00:00, execution_date=20230101T002000, start_date=20241113T124356, end_date=20241113T124357
+[2024-11-13T12:43:57.216+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-13T12:43:57.218+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 29 for task run_scrapy (Bash command failed. The command returned a non-zero exit code 1.; 659)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 276, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-13T12:43:57.249+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-13T12:43:57.275+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T12:43:57.278+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

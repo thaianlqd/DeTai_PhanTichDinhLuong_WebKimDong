@@ -1,0 +1,4 @@
+logs/
+scheduler/
+*.log
+*.tmp

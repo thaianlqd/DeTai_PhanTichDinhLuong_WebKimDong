@@ -12,8 +12,8 @@ NEWSPIDER_MODULE = "web.spiders"
 ROBOTSTXT_OBEY = True
 
 # Thiết lập độ trễ download (delay giữa các request)
-DOWNLOAD_DELAY = 0.1
-CONCURRENT_REQUESTS = 128
+DOWNLOAD_DELAY = 0
+CONCURRENT_REQUESTS = 512
 
 # Bật/tắt cookies
 #COOKIES_ENABLED = False
@@ -47,14 +47,14 @@ ITEM_PIPELINES = {
 # Bật AutoThrottle để tự động điều chỉnh tốc độ
 AUTOTHROTTLE_ENABLED = True
 AUTOTHROTTLE_START_DELAY = 0
-AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 10.0
 
 # Bật cache HTTP (tùy chọn)
-#HTTPCACHE_ENABLED = True
-#HTTPCACHE_EXPIRATION_SECS = 0
-#HTTPCACHE_DIR = "httpcache"
-#HTTPCACHE_IGNORE_HTTP_CODES = []
-#HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
+HTTPCACHE_ENABLED = True
+HTTPCACHE_EXPIRATION_SECS = 86400
+HTTPCACHE_DIR = "httpcache"
+HTTPCACHE_IGNORE_HTTP_CODES = []
+HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Đảm bảo việc sử dụng request fingerprinter và reactor mới
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"

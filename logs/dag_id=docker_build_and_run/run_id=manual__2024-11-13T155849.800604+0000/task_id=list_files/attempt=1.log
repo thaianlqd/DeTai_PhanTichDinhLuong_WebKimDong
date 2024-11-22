@@ -1,0 +1,33 @@
+[2024-11-13T15:58:51.224+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-13T15:58:51.272+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_build_and_run.list_files manual__2024-11-13T15:58:49.800604+00:00 [queued]>
+[2024-11-13T15:58:51.293+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_build_and_run.list_files manual__2024-11-13T15:58:49.800604+00:00 [queued]>
+[2024-11-13T15:58:51.294+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-13T15:58:51.316+0000] {taskinstance.py:2889} INFO - Executing <Task(BashOperator): list_files> on 2024-11-13 15:58:49.800604+00:00
+[2024-11-13T15:58:51.343+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=199) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-13T15:58:51.346+0000] {standard_task_runner.py:72} INFO - Started process 200 to run task
+[2024-11-13T15:58:51.343+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'docker_build_and_run', 'list_files', 'manual__2024-11-13T15:58:49.800604+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmpxaja5b3l']
+[2024-11-13T15:58:51.347+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask list_files
+[2024-11-13T15:58:51.378+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-13T15:58:51.417+0000] {task_command.py:467} INFO - Running <TaskInstance: docker_build_and_run.list_files manual__2024-11-13T15:58:49.800604+00:00 [running]> on host 1ff19e54b736
+[2024-11-13T15:58:51.555+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='docker_build_and_run' AIRFLOW_CTX_TASK_ID='list_files' AIRFLOW_CTX_EXECUTION_DATE='2024-11-13T15:58:49.800604+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-13T15:58:49.800604+00:00'
+[2024-11-13T15:58:51.558+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-13T15:58:51.641+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2024-11-13T15:58:51.646+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/airflow/DeTaiPhanTichDinhLuong_Xuly_Pyspark_WebKimDong_BanChinh/DeTai_PhanTichDinhLuong_WebKimDong-main_version2_pyspark_windows && ls -l']
+[2024-11-13T15:58:51.664+0000] {subprocess.py:99} INFO - Output:
+[2024-11-13T15:58:51.731+0000] {subprocess.py:106} INFO - total 16
+[2024-11-13T15:58:51.733+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root root 2505 Nov 11 08:46 Dockerfile
+[2024-11-13T15:58:51.736+0000] {subprocess.py:106} INFO - drwxrwxrwx 1 root root  512 Nov 12 09:52 dags
+[2024-11-13T15:58:51.742+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root root 7122 Nov 13 13:24 docker-compose.yml
+[2024-11-13T15:58:51.743+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root root 1784 Nov 11 08:50 entrypoint.sh
+[2024-11-13T15:58:51.744+0000] {subprocess.py:106} INFO - drwxrwxrwx 1 root root  512 Nov 13 02:52 logs
+[2024-11-13T15:58:51.745+0000] {subprocess.py:106} INFO - drwxrwxrwx 1 root root  512 Nov  6 07:53 path
+[2024-11-13T15:58:51.745+0000] {subprocess.py:106} INFO - drwxrwxrwx 1 root root  512 Nov 11 13:27 plugins
+[2024-11-13T15:58:51.746+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root root  284 Nov  7 09:45 requirements.txt
+[2024-11-13T15:58:51.747+0000] {subprocess.py:106} INFO - -rwxrwxrwx 1 root root  249 Oct  3 14:00 scrapy.cfg
+[2024-11-13T15:58:51.748+0000] {subprocess.py:106} INFO - drwxrwxrwx 1 root root  512 Oct 12 14:46 web
+[2024-11-13T15:58:51.750+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2024-11-13T15:58:51.789+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-13T15:58:51.790+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=docker_build_and_run, task_id=list_files, run_id=manual__2024-11-13T15:58:49.800604+00:00, execution_date=20241113T155849, start_date=20241113T155851, end_date=20241113T155851
+[2024-11-13T15:58:51.818+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-13T15:58:51.847+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T15:58:51.848+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
