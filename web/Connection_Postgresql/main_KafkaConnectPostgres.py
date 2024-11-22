@@ -1,4 +1,4 @@
-# #note: file này là file làm ra - siêu quan trọng :))
+#note: file này là file làm ra - siêu quan trọng :))
 import os
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col
@@ -181,6 +181,7 @@ query = parsed_data.writeStream \
 
 # Chờ cho đến khi query kết thúc
 query.awaitTermination()
+
 
 
 

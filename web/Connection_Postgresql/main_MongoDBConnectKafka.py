@@ -302,6 +302,92 @@ if __name__ == "__main__":
 
 
 
+# import os
+# import json
+# from kafka.admin import KafkaAdminClient, NewTopic  # Import đúng từ kafka.admin
+# from kafka import KafkaProducer  # Chỉ cần KafkaProducer cho trường hợp này
+# from pymongo import MongoClient
+# from time import sleep
+
+# # Cấu hình MongoDB
+# MONGO_HOST = os.getenv('MONGO_HOST', 'mymongodb_container')
+# MONGO_PORT = 27017
+# MONGO_DB = 'books_data_KimDong_12'
+# MONGO_COLLECTION = 'books_KimDong'
+
+# # Cấu hình Kafka
+# KAFKA_TOPIC = 'books_topic'
+# KAFKA_BOOTSTRAP_SERVERS = os.getenv('KAFKA_BOOTSTRAP_SERVERS', 'kafka_container:29092')
+
+# # Khởi tạo Kafka Admin Client để kiểm tra và tạo topic nếu cần
+# admin_client = KafkaAdminClient(bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS)
+
+# # Hàm để tạo topic nếu chưa tồn tại
+# def create_topic_if_not_exists(topic_name):
+#     try:
+#         # Kiểm tra nếu topic đã tồn tại
+#         topics = admin_client.list_topics()
+#         if topic_name not in topics:
+#             print(f"Topic {topic_name} chưa tồn tại, đang tạo mới...")
+#             new_topic = NewTopic(name=topic_name, num_partitions=1, replication_factor=1)
+#             admin_client.create_topics(new_topics=[new_topic], validate_only=False)
+#             print(f"Topic {topic_name} đã được tạo.")
+#         else:
+#             print(f"Topic {topic_name} đã tồn tại.")
+#     except Exception as e:
+#         print(f"Lỗi khi tạo topic: {e}")
+
+# # Khởi tạo Kafka Producer
+# producer = KafkaProducer(
+#     bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
+#     value_serializer=lambda v: json.dumps(v).encode('utf-8'),
+#     acks='all',  # Chờ tất cả broker xác nhận khi gửi
+#     batch_size=16384,
+#     linger_ms=10
+# )
+
+# # Đọc dữ liệu từ MongoDB và gửi đến Kafka
+# def stream_from_mongo_to_kafka(max_iterations=5, max_records_per_iteration=50):
+#     client = MongoClient(MONGO_HOST, MONGO_PORT)
+#     collection = client[MONGO_DB][MONGO_COLLECTION]
+
+#     for _ in range(max_iterations):
+#         records = []
+#         ids = []
+        
+#         # Giới hạn số lượng bản ghi lấy mỗi lần
+#         for document in collection.find({"sent_to_kafka": {"$ne": True}}).limit(max_records_per_iteration):
+#             ids.append(document["_id"])
+#             document.pop("_id", None)  # Loại bỏ _id trước khi gửi
+#             records.append(document)
+
+#         if records:
+#             try:
+#                 # Gửi dữ liệu đến Kafka
+#                 producer.send(KAFKA_TOPIC, value=records)
+#                 producer.flush()  # Đảm bảo gửi thành công
+#                 print(f"Đã gửi {len(records)} bản ghi đến Kafka.")
+                
+#                 # Đánh dấu các bản ghi đã gửi
+#                 collection.update_many(
+#                     {"_id": {"$in": ids}},
+#                     {"$set": {"sent_to_kafka": True}}
+#                 )
+#             except Exception as e:
+#                 print(f"Lỗi khi gửi dữ liệu đến Kafka: {e}")
+        
+#         if not records:
+#             print("Không còn bản ghi mới để gửi. Hoàn thành.")
+#             break
+
+#         sleep(1)
+
+# # Chạy hàm tạo topic nếu chưa tồn tại
+# if __name__ == "__main__":
+#     create_topic_if_not_exists(KAFKA_TOPIC)  # Kiểm tra và tạo topic nếu cần
+    
+#     # Chạy hàm stream dữ liệu từ MongoDB đến Kafka
+#     stream_from_mongo_to_kafka()
 
 
 
@@ -314,4 +400,67 @@ if __name__ == "__main__":
 
 
 
+# import os
+# import json
+# from kafka import KafkaProducer
+# from pymongo import MongoClient
+# from time import sleep
 
+# # Cấu hình MongoDB
+# MONGO_HOST = os.getenv('MONGO_HOST', 'mymongodb_container')
+# MONGO_PORT = 27017
+# MONGO_DB = 'books_data_KimDong_12'
+# MONGO_COLLECTION = 'books_KimDong'
+
+# # Cấu hình Kafka
+# KAFKA_TOPIC = 'books_topic'
+# KAFKA_BOOTSTRAP_SERVERS = os.getenv('KAFKA_BOOTSTRAP_SERVERS', 'kafka_container:9092')
+
+# # Khởi tạo Kafka Producer
+# producer = KafkaProducer(
+#     bootstrap_servers=KAFKA_BOOTSTRAP_SERVERS,
+#     value_serializer=lambda v: json.dumps(v).encode('utf-8'),
+#     acks='all',
+#     batch_size=16384,
+#     linger_ms=10
+# )
+
+# # Đọc dữ liệu từ MongoDB và gửi đến Kafka
+# def stream_from_mongo_to_kafka():
+#     client = MongoClient(MONGO_HOST, MONGO_PORT)
+#     collection = client[MONGO_DB][MONGO_COLLECTION]
+
+#     while True:
+#         # Lấy các bản ghi chưa được gửi
+#         records = []
+#         ids = []
+#         for document in collection.find({"sent_to_kafka": {"$ne": True}}).limit(100):
+#             ids.append(document["_id"])  # Lưu _id trước khi loại bỏ
+#             document.pop("_id", None)  # Loại bỏ _id trước khi gửi vào Kafka
+#             records.append(document)
+
+#         if records:
+#             try:
+#                 # Gửi dữ liệu đến Kafka
+#                 producer.send(KAFKA_TOPIC, value=records)
+#                 producer.flush()
+#                 print(f"Đã gửi {len(records)} bản ghi đến Kafka.")
+
+#                 # Cập nhật trạng thái đã gửi
+#                 collection.update_many(
+#                     {"_id": {"$in": ids}},
+#                     {"$set": {"sent_to_kafka": True}}
+#                 )
+#             except Exception as e:
+#                 print(f"Lỗi khi gửi dữ liệu đến Kafka: {e}")
+        
+#         # Kiểm tra nếu không còn bản ghi mới, dừng vòng lặp
+#         if not records:
+#             print("Không còn bản ghi mới để gửi. Hoàn thành.")
+#             break
+
+#         sleep(1)
+
+# # Chạy hàm stream dữ liệu từ MongoDB đến Kafka
+# if __name__ == "__main__":
+#     stream_from_mongo_to_kafka()

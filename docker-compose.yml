@@ -49,19 +49,6 @@
 
 #note 2: sử dụng kafka và zookeeper
 services:
-  #note: container 1 - crawl dữ liệu 
-  app_crawldata_kimdong:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: app_crawldata_kimdong
-    depends_on:
-      - mongodb_container
-    networks:
-      - my_network
-    restart: "no"
-
-  #note: container 2 - spark
   spark_container:
     image: bitnami/spark:latest
     container_name: spark_container
@@ -82,7 +69,7 @@ services:
     networks:
       - my_network
 
-  #note: container 3 - MongoDB
+  # MongoDB
   mongodb_container:
     image: mongo:latest
     container_name: mymongodb_container
@@ -91,7 +78,7 @@ services:
     networks:
       - my_network
 
-  #note: container 4 - postgreSQL
+  # PostgreSQL
   postgres_container:
     image: postgres:latest
     container_name: postgres_container
@@ -104,7 +91,6 @@ services:
     networks:
       - my_network
 
-  #note: container 5 - pgadmin4 
   pgadmin_container:
     image: dpage/pgadmin4:latest
     container_name: pgadmin_container
@@ -118,7 +104,6 @@ services:
     networks:
       - my_network
 
-  #note: container 6 - zookeeper
   zookeeper_container:
     image: confluentinc/cp-zookeeper:7.3.2
     container_name: zookeeper_container
@@ -130,7 +115,7 @@ services:
     networks:
       - my_network # Kết nối vào mạng my_network
 
-  #note: container 7-  Kafka 
+  # Kafka container
   kafka_container:
     image: confluentinc/cp-kafka:7.3.2
     container_name: kafka_container
@@ -148,7 +133,6 @@ services:
     networks:
       - my_network
 
-  #note: container 8 - kafdrop 
   kafdrop:
     image: obsidiandynamics/kafdrop
     container_name: kafdrop
@@ -160,77 +144,70 @@ services:
       - "9000:9000" # Kafdrop Web UI
     networks:
       - my_network
+  # airflow_init:
+  #   image: apache/airflow:2.10.3
+  #   env_file:
+  #     - .env # Đảm bảo chỉ định file .env
+  #   depends_on:
+  #     - postgres_local_container
+  #   volumes:
+  #     - ./dags:/opt/airflow/dags
+  #     - ./logs:/opt/airflow/logs
+  #     - ./plugins:/opt/airflow/plugins
+  #   command: "airflow db init"
+  #   networks:
+  #     - my_network
 
-  #note: container 9 - airflow_init
-  airflow_init:
-    image: apache/airflow:2.10.3
-    env_file:
-      - .env # Đảm bảo chỉ định file .env
-    depends_on:
-      - postgres_local_container
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-    command: "airflow db init"
-    networks:
-      - my_network
+  # airflow_webserver:
+  #   image: apache/airflow:2.10.3
+  #   container_name: airflow_webserver
+  #   env_file:
+  #     - .env # Đảm bảo chỉ định file .env
+  #   ports:
+  #     - "8080:8080"
+  #   depends_on:
+  #     - postgres_local_container
+  #     - airflow_init
+  #   volumes:
+  #     - ./dags:/opt/airflow/dags
+  #     - ./logs:/opt/airflow/logs
+  #     - ./plugins:/opt/airflow/plugins
+  #     - /var/run/docker.sock:/var/run/docker.sock
+  #   command: >
+  #     bash -c "airflow db init && \
+  #              airflow users create --username thaianlqd050204 --password 12345 --firstname Thai --lastname An --role Admin --email thaianlqd050204@example.com || echo 'User already exists' && \
+  #              airflow webserver"
 
-  #note: container 10 - airflow_webserver
-  airflow_webserver:
-    image: apache/airflow:2.10.3
-    container_name: airflow_webserver
-    env_file:
-      - .env # Đảm bảo chỉ định file .env
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres_local_container
-      - airflow_init
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-      - /var/run/docker.sock:/var/run/docker.sock
-    command: >
-      bash -c " pip install --upgrade pip && \ pip install confluent-kafka pymongo six==1.16.0 python-dateutil && \ airflow db init &&  \ (airflow users create --username thaianlqd050204 --password 12345 --firstname Thai --lastname An --role Admin --email thaianlqd050204@example.com ||  echo 'User already exists') && \ airflow webserver "
+  #   networks:
+  #     - my_network
 
-    networks:
-      - my_network
+  # airflow_scheduler:
+  #   image: apache/airflow:2.10.3
+  #   container_name: airflow_scheduler
+  #   env_file:
+  #     - .env # Đảm bảo chỉ định file .env
+  #   depends_on:
+  #     - postgres_local_container
+  #     - airflow_init
+  #   volumes:
+  #     - ./dags:/opt/airflow/dags
+  #     - ./logs:/opt/airflow/logs
+  #     - ./plugins:/opt/airflow/plugins
+  #   command: "airflow scheduler"
+  #   networks:
+  #     - my_network
 
-  #note: container 11 - airflow_scheduler
-  airflow_scheduler:
-    image: apache/airflow:2.10.3
-    container_name: airflow_scheduler
-    env_file:
-      - .env # Đảm bảo chỉ định file .env
-    depends_on:
-      - postgres_local_container
-      - airflow_init
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./logs:/opt/airflow/logs
-      - ./plugins:/opt/airflow/plugins
-      - /var/run/docker.sock:/var/run/docker.sock
-    # command: "airflow scheduler"
-    command: >
-      bash -c " pip install --upgrade pip && \ pip install confluent-kafka pymongo six==1.16.0 python-dateutil && \ airflow db init && \ airflow scheduler "
-
-    networks:
-      - my_network
-
-  #note: container 12 - postgres_local_container 
-  postgres_local_container:
-    image: postgres:latest
-    container_name: postgres_local_container
-    environment:
-      - POSTGRES_USER=myuser
-      - POSTGRES_PASSWORD=12345
-      - POSTGRES_DB=airflow
-    ports:
-      - "5433:5432" # Kết nối từ localhost:5433 đến PostgreSQL container (bên trong container vẫn là 5432)
-    networks:
-      - my_network
+  # postgres_local_container:
+  #   image: postgres:latest
+  #   container_name: postgres_local_container
+  #   environment:
+  #     - POSTGRES_USER=myuser
+  #     - POSTGRES_PASSWORD=12345
+  #     - POSTGRES_DB=airflow
+  #   ports:
+  #     - "5433:5432" # Kết nối từ localhost:5433 đến PostgreSQL container (bên trong container vẫn là 5432)
+  #   networks:
+  #     - my_network
 
 networks:
   my_network:

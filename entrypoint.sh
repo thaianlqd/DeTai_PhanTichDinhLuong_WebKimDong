@@ -39,16 +39,16 @@ else
     exit 1
 fi
 
-# # Chạy Python script test_ketnoi.py sau khi cào dữ liệu thành công
-# echo "Bắt đầu chạy Python script main_MongoDBConnectKafka.py..."
-# python web/Connection_Postgresql/main_MongoDBConnectKafka.py
+#Chạy Python script test_ketnoi.py sau khi cào dữ liệu thành công
+echo "Bắt đầu chạy Python script test_ketnoi.py..."
+python web/Connection_Postgresql/main_MongoDBConnectKafka.py
 
-# # Kiểm tra xem quá trình chạy script có thành công không
-# if [ $? -eq 0 ]; then
-#     echo "Chạy script main_MongoDBConnectKafka.py và đẩy dữ liệu từ MongoDB lên Kafka thành công, Spark job sẽ được gửi tới spark_container."
-# else
-#     echo "Chạy script main_MongoDBConnectKafka.py thất bại."
-#     exit 1
-# fi
+# Kiểm tra xem quá trình chạy script có thành công không
+if [ $? -eq 0 ]; then
+    echo "Chạy script main_MongoDBConnectKafka.py và đẩy dữ liệu từ MongoDB lên Kafka thành công, Spark job sẽ được gửi tới spark_container."
+else
+    echo "Chạy script main_MongoDBConnectKafka.py thất bại."
+    exit 1
+fi
 
 

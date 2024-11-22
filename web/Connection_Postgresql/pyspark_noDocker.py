@@ -6,7 +6,7 @@ import psycopg2
 # Kết nối tới MongoDB bằng pymongo để lấy dữ liệu
 def connect_to_mongodb():
     mongo_client = pymongo.MongoClient('mongodb://localhost:27017/')
-    db = mongo_client['books_data_KimDong_22']  # Thay tên database MongoDB của bạn
+    db = mongo_client['books_data_KimDong_20']  # Thay tên database MongoDB của bạn
     collection = db['books_KimDong']  # Thay tên collection của bạn
     return collection
 

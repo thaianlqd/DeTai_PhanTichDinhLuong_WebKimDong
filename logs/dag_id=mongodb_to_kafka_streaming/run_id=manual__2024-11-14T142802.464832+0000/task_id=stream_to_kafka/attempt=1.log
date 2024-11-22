@@ -1,0 +1,20 @@
+[2024-11-14T14:28:05.886+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-14T14:28:05.906+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mongodb_to_kafka_streaming.stream_to_kafka manual__2024-11-14T14:28:02.464832+00:00 [queued]>
+[2024-11-14T14:28:05.913+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mongodb_to_kafka_streaming.stream_to_kafka manual__2024-11-14T14:28:02.464832+00:00 [queued]>
+[2024-11-14T14:28:05.914+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-14T14:28:05.926+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): stream_to_kafka> on 2024-11-14 14:28:02.464832+00:00
+[2024-11-14T14:28:05.937+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=258) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-14T14:28:05.938+0000] {standard_task_runner.py:72} INFO - Started process 259 to run task
+[2024-11-14T14:28:05.937+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'mongodb_to_kafka_streaming', 'stream_to_kafka', 'manual__2024-11-14T14:28:02.464832+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test_airflow_ahihi.py', '--cfg-path', '/tmp/tmpso7suzfl']
+[2024-11-14T14:28:05.939+0000] {standard_task_runner.py:105} INFO - Job 3: Subtask stream_to_kafka
+[2024-11-14T14:28:05.960+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-14T14:28:06.033+0000] {task_command.py:467} INFO - Running <TaskInstance: mongodb_to_kafka_streaming.stream_to_kafka manual__2024-11-14T14:28:02.464832+00:00 [running]> on host 06e1585c0f69
+[2024-11-14T14:28:06.248+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='mongodb_to_kafka_streaming' AIRFLOW_CTX_TASK_ID='stream_to_kafka' AIRFLOW_CTX_EXECUTION_DATE='2024-11-14T14:28:02.464832+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-14T14:28:02.464832+00:00'
+[2024-11-14T14:28:06.256+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-14T14:28:07.675+0000] {logging_mixin.py:190} INFO - Đã gửi 50 bản ghi đến Kafka.
+[2024-11-14T14:28:07.720+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-14T14:28:07.732+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-14T14:28:07.733+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=mongodb_to_kafka_streaming, task_id=stream_to_kafka, run_id=manual__2024-11-14T14:28:02.464832+00:00, execution_date=20241114T142802, start_date=20241114T142805, end_date=20241114T142807
+[2024-11-14T14:28:07.765+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-14T14:28:07.789+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-14T14:28:07.792+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

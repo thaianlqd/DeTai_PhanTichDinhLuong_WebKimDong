@@ -1,0 +1,187 @@
+[2024-11-12T13:06:12.377+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-12T13:06:12.401+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: docker_build_and_run.docker_build_image manual__2024-11-12T13:06:10.564095+00:00 [queued]>
+[2024-11-12T13:06:12.418+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: docker_build_and_run.docker_build_image manual__2024-11-12T13:06:10.564095+00:00 [queued]>
+[2024-11-12T13:06:12.419+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2024-11-12T13:06:12.437+0000] {taskinstance.py:2889} INFO - Executing <Task(DockerOperator): docker_build_image> on 2024-11-12 13:06:10.564095+00:00
+[2024-11-12T13:06:12.446+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=200) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-11-12T13:06:12.446+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'docker_build_and_run', 'docker_build_image', 'manual__2024-11-12T13:06:10.564095+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/test_main.py', '--cfg-path', '/tmp/tmpnd4jd7ct']
+[2024-11-12T13:06:12.448+0000] {standard_task_runner.py:72} INFO - Started process 201 to run task
+[2024-11-12T13:06:12.449+0000] {standard_task_runner.py:105} INFO - Job 2: Subtask docker_build_image
+[2024-11-12T13:06:12.467+0000] {logging_mixin.py:190} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/settings.py:209 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2024-11-12T13:06:12.502+0000] {task_command.py:467} INFO - Running <TaskInstance: docker_build_and_run.docker_build_image manual__2024-11-12T13:06:10.564095+00:00 [running]> on host 3f09a344ed7e
+[2024-11-12T13:06:12.594+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='docker_build_and_run' AIRFLOW_CTX_TASK_ID='docker_build_image' AIRFLOW_CTX_EXECUTION_DATE='2024-11-12T13:06:10.564095+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-12T13:06:10.564095+00:00'
+[2024-11-12T13:06:12.595+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-12T13:06:12.721+0000] {docker.py:495} INFO - ::group::Pulling docker image docker:latest
+[2024-11-12T13:06:16.054+0000] {docker.py:509} INFO - latest: Pulling from library/docker
+[2024-11-12T13:06:17.352+0000] {docker.py:509} INFO - 9a8033d952a3: Pulling fs layer
+[2024-11-12T13:06:17.352+0000] {docker.py:509} INFO - 50dca03fda78: Pulling fs layer
+[2024-11-12T13:06:17.353+0000] {docker.py:509} INFO - 85f49706f80d: Pulling fs layer
+[2024-11-12T13:06:17.354+0000] {docker.py:509} INFO - 67a04a7ff7d2: Pulling fs layer
+[2024-11-12T13:06:17.354+0000] {docker.py:509} INFO - 8c91c45b7163: Pulling fs layer
+[2024-11-12T13:06:17.355+0000] {docker.py:509} INFO - a89c8d520078: Pulling fs layer
+[2024-11-12T13:06:17.356+0000] {docker.py:509} INFO - da9db072f522: Pulling fs layer
+[2024-11-12T13:06:17.356+0000] {docker.py:509} INFO - f2d9edfe36a6: Pulling fs layer
+[2024-11-12T13:06:17.357+0000] {docker.py:509} INFO - 81a4876464e3: Pulling fs layer
+[2024-11-12T13:06:17.357+0000] {docker.py:509} INFO - 083f80306f14: Pulling fs layer
+[2024-11-12T13:06:17.358+0000] {docker.py:509} INFO - 9d52faa00270: Pulling fs layer
+[2024-11-12T13:06:17.358+0000] {docker.py:509} INFO - 16ef5fc10cd3: Pulling fs layer
+[2024-11-12T13:06:17.358+0000] {docker.py:509} INFO - c73149c53d3b: Pulling fs layer
+[2024-11-12T13:06:17.359+0000] {docker.py:509} INFO - 4f4fb700ef54: Pulling fs layer
+[2024-11-12T13:06:17.360+0000] {docker.py:509} INFO - 3d1ebdd83577: Pulling fs layer
+[2024-11-12T13:06:17.360+0000] {docker.py:509} INFO - 6fb1d2cfec65: Pulling fs layer
+[2024-11-12T13:06:17.361+0000] {docker.py:509} INFO - 4f4fb700ef54: Already exists
+[2024-11-12T13:06:20.853+0000] {docker.py:509} INFO - 9a8033d952a3: Downloading
+[2024-11-12T13:06:23.048+0000] {docker.py:509} INFO - 67a04a7ff7d2: Download complete
+[2024-11-12T13:06:23.049+0000] {docker.py:509} INFO - 16ef5fc10cd3: Download complete
+[2024-11-12T13:06:23.250+0000] {docker.py:509} INFO - 8c91c45b7163: Download complete
+[2024-11-12T13:06:23.251+0000] {docker.py:509} INFO - 6fb1d2cfec65: Download complete
+[2024-11-12T13:06:23.252+0000] {docker.py:509} INFO - 3d1ebdd83577: Download complete
+[2024-11-12T13:06:23.350+0000] {docker.py:509} INFO - f2d9edfe36a6: Download complete
+[2024-11-12T13:06:23.352+0000] {docker.py:509} INFO - a89c8d520078: Download complete
+[2024-11-12T13:06:27.452+0000] {docker.py:509} INFO - 81a4876464e3: Download complete
+[2024-11-12T13:06:28.051+0000] {docker.py:509} INFO - 083f80306f14: Downloading
+[2024-11-12T13:06:29.051+0000] {docker.py:509} INFO - 50dca03fda78: Downloading
+[2024-11-12T13:06:30.248+0000] {docker.py:509} INFO - 9d52faa00270: Downloading
+[2024-11-12T13:06:31.249+0000] {docker.py:509} INFO - c73149c53d3b: Downloading
+[2024-11-12T13:06:32.549+0000] {docker.py:509} INFO - 85f49706f80d: Downloading
+[2024-11-12T13:06:33.749+0000] {docker.py:509} INFO - da9db072f522: Downloading
+[2024-11-12T13:06:46.346+0000] {docker.py:509} INFO - da9db072f522: Download complete
+[2024-11-12T13:06:53.749+0000] {docker.py:509} INFO - 9a8033d952a3: Download complete
+[2024-11-12T13:06:55.649+0000] {docker.py:509} INFO - 083f80306f14: Download complete
+[2024-11-12T13:06:58.047+0000] {docker.py:509} INFO - 50dca03fda78: Download complete
+[2024-11-12T13:07:01.846+0000] {docker.py:509} INFO - c73149c53d3b: Download complete
+[2024-11-12T13:07:14.047+0000] {docker.py:509} INFO - 9d52faa00270: Download complete
+[2024-11-12T13:07:36.344+0000] {docker.py:509} INFO - 85f49706f80d: Download complete
+[2024-11-12T13:07:37.558+0000] {docker.py:504} INFO - Digest: sha256:fa2054c5a83f1eacc2700f2fe8c5a3b7f8e2a3fcbfb5e24be0436d3a98f7d140
+[2024-11-12T13:07:37.560+0000] {docker.py:504} INFO - Status: Downloaded newer image for docker:latest
+[2024-11-12T13:07:37.566+0000] {docker.py:511} INFO - ::endgroup::
+[2024-11-12T13:07:37.568+0000] {docker.py:367} INFO - Starting docker container from image docker:latest
+[2024-11-12T13:07:37.738+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://host.docker.internal:2375/v1.47/containers/create
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 512, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 372, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 399, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://host.docker.internal:2375/v1.47/containers/create: Bad Request ("the working directory 'D:\DeTaiPhanTichDinhLuong_Xuly_Pyspark_WebKimDong_BanChinh\DeTai_PhanTichDinhLuong_WebKimDong-main_version2_pyspark_windows' is invalid, it needs to be an absolute path")
+[2024-11-12T13:07:37.804+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=docker_build_and_run, task_id=docker_build_image, run_id=manual__2024-11-12T13:06:10.564095+00:00, execution_date=20241112T130610, start_date=20241112T130612, end_date=20241112T130737
+[2024-11-12T13:07:37.838+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-12T13:07:37.840+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 2 for task docker_build_image (400 Client Error for http://host.docker.internal:2375/v1.47/containers/create: Bad Request ("the working directory 'D:\DeTaiPhanTichDinhLuong_Xuly_Pyspark_WebKimDong_BanChinh\DeTai_PhanTichDinhLuong_WebKimDong-main_version2_pyspark_windows' is invalid, it needs to be an absolute path"); 201)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 275, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://host.docker.internal:2375/v1.47/containers/create
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 512, in execute
+    return self._run_image()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 372, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/docker/operators/docker.py", line 399, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/container.py", line 440, in create_container
+    return self.create_container_from_config(config, name, platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/container.py", line 457, in create_container_from_config
+    return self._result(res, True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 281, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/api/client.py", line 277, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://host.docker.internal:2375/v1.47/containers/create: Bad Request ("the working directory 'D:\DeTaiPhanTichDinhLuong_Xuly_Pyspark_WebKimDong_BanChinh\DeTai_PhanTichDinhLuong_WebKimDong-main_version2_pyspark_windows' is invalid, it needs to be an absolute path")
+[2024-11-12T13:07:37.857+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-11-12T13:07:37.909+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T13:07:37.915+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

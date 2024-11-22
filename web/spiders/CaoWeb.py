@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 class WebNXBKimDong(scrapy.Spider):
     name = 'WebNXBNhiDong_Crawler'
     allowed_domains = ['nxbkimdong.com.vn']
-    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 52)]
+    start_urls = [f'https://nxbkimdong.com.vn/collections/all?sort_by=best-selling&page={i}' for i in range(1, 6)]
 
     def parse(self, response):
         #note: Lấy URL của sách từ trang hiện tại
@@ -113,6 +113,24 @@ class WebNXBKimDong(scrapy.Spider):
         item['chieuDai'] = chieu_dai if chieu_dai and chieu_dai != "" else "không có"
         
         
+        
+
+
+        # item['soTrang'] = (
+        #     # Sử dụng XPath từ Scrapy
+        #     (response.xpath('//li[contains(text(), "Số trang")]/text()').get(default="không có").strip().split(':')[-1] 
+        #     if response.xpath('//li[contains(text(), "Số trang")]/text()').get() 
+        #     else None) or 
+        #     # Sử dụng BeautifulSoup
+        #     (soup.find('li', text='Số trang').get_text(strip=True).split(':')[-1] 
+        #     if soup.find('li', text='Số trang') 
+        #     else soup.find(class_='field-name-field-product-sotrang').find(class_='field-item even').get_text(strip=True) 
+        #     if soup.find(class_='field-name-field-product-sotrang') 
+        #     else None)
+        #     or 
+        #     "không có"
+        # )
+        
         item['soTrang'] = (
             # Sử dụng XPath từ Scrapy
             (response.xpath('//li[contains(text(), "Số trang")]/text()').get(default="không có")
@@ -140,7 +158,9 @@ class WebNXBKimDong(scrapy.Spider):
             or 
             "không có"
         )
-       
+
+        
+          
 
         item['dinhDang'] = (
             # Sử dụng XPath từ Scrapy

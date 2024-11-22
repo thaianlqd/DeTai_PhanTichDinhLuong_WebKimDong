@@ -6,6 +6,5 @@ psycopg2-binary
 beautifulsoup4
 kafka-python
 six==1.16.0
-
 # pyspark
 # psycopg2

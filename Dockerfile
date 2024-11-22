@@ -71,6 +71,9 @@ FROM python:3.11
 # Đặt thư mục làm việc
 WORKDIR /usr/src/app
 
+# Cài đặt librdkafka-dev để hỗ trợ cài đặt confluent-kafka
+# RUN apt-get update && apt-get install -y librdkafka-dev
+
 # Sao chép requirements.txt và cài đặt các gói cần thiết, bao gồm cả pyspark
 COPY requirements.txt ./
 
@@ -89,10 +92,11 @@ COPY . .
 RUN chmod +x entrypoint.sh
 
 # Đặt entrypoint cho container
-# ENTRYPOINT ["sh", "entrypoint.sh"]
+ENTRYPOINT ["sh", "entrypoint.sh"]
 
-#note: Không chạy Scrapy khi container khởi động - phần này sử dụng cho phần airflow
-CMD ["sh", "-c", "tail -f /dev/null"]
+
+
+
 
 
 
